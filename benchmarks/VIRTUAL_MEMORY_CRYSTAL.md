@@ -11,6 +11,8 @@ A dedicated GitHub Actions workflow reproduces both from source:
 
 - [Reproduce Virtual Memory Crystal](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-vmc.yml)
 
+**Verified fresh public run:** [GitHub Actions run #37610839443](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/runs/37610839443) completed successfully in 29 seconds. On that runner, VMC-002 measured **35.9258×** on the structured quotient/local-consequence fixture and **0.9475×** on the high-entropy negative control; VMC-001 reproduced the **13.9161%** E8 MSE reduction.
+
 ## Headline results
 
 | Test | WITHOUT / control | WITH / VMC treatment | Measured result | Correctness / boundary |
