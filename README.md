@@ -132,11 +132,13 @@ Useful runtime conventions inside the current seed include:
 
 The benchmark ledger consolidates the Oct. 6–7 Arena receipts, standalone C++ sources, browser persistence tests, HOLD/repair scars, physical-convergence runs, neural A/B work, reification tests, and claim ceilings. The core standalone tests can be rerun on GitHub's own machine from the Actions tab; no V5 ZIP download is required.
 
-## Does the package contain the benchmarks?
+## Where do the benchmark materials live?
 
-**Partly.** The V5 developer ZIP contains extensive acceptance/self-test receipts, WebGL/native-browser witnesses, Gate10 frontier evidence, and a packaged Gate10 `QUICK_BENCH.json` / `QUICK_BENCH.png` plus its benchmark source. It does **not** contain every Paper XI benchmark as a standalone executable benchmark program.
+The public repository now contains the **standalone source for the core reproducible benchmark suite** under `benchmarks/src/`, the self-contained browser 24³ test at `benchmarks/24cube.html`, and the one-click GitHub Actions runner.
 
-For that reason, the principal measured D0 results are summarized below and the full technical context/claim ceilings remain in Paper XI.
+The V5 developer ZIP remains the deeper archival package for Arena receipts, WebGL/native-browser witnesses, Gate10 frontier material, lineage, and integration evidence. Not every Arena-dependent or Paper XI experiment reduces to one tiny standalone executable, so the benchmark ledger distinguishes standalone tests from browser/Arena integrations and source-fixture tests.
+
+For the current Oct. 6–7 harvest, start with [benchmarks/README.md](benchmarks/README.md). The principal earlier Paper XI results are also summarized below, with their original claim ceilings preserved.
 
 ## Selected published D0 benchmark results
 
