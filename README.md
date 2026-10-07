@@ -12,7 +12,9 @@ Paper XI Rev.2 defensively publishes post-Paper-X work in Winstonian Physics, co
 - Paper XI Rev.2: public deposit record to be linked here when published.
 - This repository: canonical software/reproducibility home.
 
-## Current World Seed release
+## Current World Seed release identity
+
+The V5 artifacts below are hash-pinned for the Paper XI Rev.2 release. Large binary/single-file artifacts should be attached to the repository's release rather than silently substituted with a different build.
 
 `AURA_WORLD_SEED__DEVELOPER_ONE_STOP_V5_D0__20261007.html`
 
