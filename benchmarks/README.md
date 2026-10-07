@@ -4,6 +4,31 @@
 
 This page consolidates the benchmark work that was spread across Arena receipts, research notes, C++ programs, browser witnesses, and acceptance packets. It intentionally preserves failures, HOLDs, repairs, and claim ceilings instead of reporting only favorable results.
 
+## Why the numbers matter: WITH vs WITHOUT
+
+Where a matched control exists, this ledger now shows it explicitly.
+
+| Test | WITHOUT / control | WITH / treatment | Observed difference | What it means |
+|---|---:|---:|---:|---|
+| Triad/quartet scheduling | fixed static: **30/66** unique pairs | balanced rotating: **66/66** | **+54.5 percentage points** of pair coverage; pair-count SD **91.7% lower** | structural scheduling improvement |
+| HDC HRR binding | direct **O(D²)** convolution | FFT HRR | historical same-carrier result ≈ **130.4×** | implementation speedup with numerical equivalence guard |
+| HDC cached binding | direct **O(D²)** convolution | cached-spectrum HRR | historical same-carrier result ≈ **417.3×** | implementation speedup with same reference |
+| Exact reification | full source bytes | exact program + residual | structured fixture **132,352 → 1,110 bytes** (≈**119×** smaller) | compression only where exact structure is earned |
+| Reification negative control | deterministic/random-like source | exact program + residual | ratio ≈ **1.00**, so **no false compression win** | falsifies cherry-picked compression |
+| Gate24 workcells | serial **4.3 ms** | parallel **1.6 ms** | **2.687×** lower latency ratio on that fixture | browser-worker latency only |
+| Archangel neural dispatch | pre condition | post condition | median **3.4909×**; heavy touches **−75%** | paired Arena A/B |
+| H01 storage accounting | monolithic **1.2 GB** proxy | selective **5.09 MB** | ≈ **235.54×** less addressed storage | computational sparse-manifestation fixture |
+| Lineage storage | full child copy **54,612,970 B** | exact patch **21,570 B** | **2,531.9×** smaller incremental storage | exact source-pair delta |
+| Four-parent lift | roots without gate-specific evidence: **1/24** | explicit evidence cartridge: **24/24** | HOLD → PASS | validity/control improvement, not speed |
+| Physical-completion judge | procedural judge closed **100/100** but could overclaim | residual-specific physical canaries | **50/50** physical closures with **1 HOLD + 12 repairs** | stricter validity, not speed |
+| 24³ carrier overhead | closed-world mean **744.8 ms** | integrated 9D mean **787.1 ms** | integrated carrier ≈ **5.7% slower** | publishes a cost, not just wins |
+
+Some benchmarks do **not** yet have a clean matched performance baseline. In particular, the standalone Orphanim 24⁴ result is presently a correctness/throughput result; the historical interpreted-JavaScript timeout is not an apples-to-apples control for native C++. RGB tubelets and ARIEL journey fuzzing likewise should not be advertised as performance improvements until a matched control is run.
+
+**Effect size is not automatically statistical significance.** For timing results, independent reviewers should use repeated paired runs on the same machine. The reproducer supports **1, 3, 5, 10, or 20 repetitions**, records the environment, and emits fresh raw JSON plus a comparison summary.
+
+Full independent instructions: **[REPRODUCE.md](REPRODUCE.md)**
+
 ## Reproduce without downloading the developer ZIP
 
 You do **not** need the 95 MB developer package.
