@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aura Creator Cartridges</title>
+<style>
+:root{--bg:#030712;--panel:#08111fdd;--line:#1f334b;--cyan:#22d3ee;--vio:#a855f7;--green:#34d399;--amber:#f59e0b;--txt:#e5f3ff;--muted:#94a3b8}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--txt);font-family:Inter,ui-sans-serif,system-ui;background:
+radial-gradient(circle at 15% 0,rgba(34,211,238,.14),transparent 30%),
+radial-gradient(circle at 85% 10%,rgba(168,85,247,.13),transparent 28%),#02040a}
+.wrap{max-width:1450px;margin:auto;padding:22px}.glass{background:linear-gradient(180deg,rgba(10,20,37,.91),rgba(3,8,18,.78));border:1px solid rgba(103,232,249,.16);box-shadow:0 30px 100px rgba(0,0,0,.35);backdrop-filter:blur(18px)}
+.hero{border-radius:28px;padding:28px}.eyebrow{font:900 10px ui-monospace,monospace;letter-spacing:.18em;color:var(--cyan)}
+h1{font-size:clamp(40px,7vw,80px);line-height:.92;letter-spacing:-.06em;margin:12px 0;background:linear-gradient(115deg,#fff 15%,var(--cyan),var(--vio));-webkit-background-clip:text;color:transparent}
+.lead{max-width:900px;color:#b4c2d4;line-height:1.65;font-size:14px}.proof{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid #26384f;border-radius:999px;padding:7px 10px;font:800 10px ui-monospace,monospace;color:#cbd5e1}.pill.good{color:var(--green);border-color:rgba(52,211,153,.35)}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:14px}.card{border-radius:22px;padding:18px;display:flex;flex-direction:column;min-height:300px;transition:.2s transform,.2s border-color}.card:hover{transform:translateY(-4px);border-color:rgba(103,232,249,.38)}
+.k{font:900 9px ui-monospace,monospace;letter-spacing:.14em;color:var(--cyan)}.card h2{font-size:21px;margin:10px 0}.card p{color:#9eb0c4;line-height:1.55;font-size:12px;flex:1}.meta{font:9px ui-monospace,monospace;color:#73879c;line-height:1.5;margin:10px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:11px;padding:9px 11px;font:900 10px ui-monospace,monospace;border:1px solid rgba(103,232,249,.22);color:#e6faff;background:#0b1424}.btn.primary{background:linear-gradient(110deg,var(--cyan),#60a5fa,var(--vio));border:0;color:#031018}
+.note{margin-top:14px;border-radius:20px;padding:16px;color:#93a7bd;font-size:12px;line-height:1.6}
+@media(max-width:1180px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.grid{grid-template-columns:1fr}.wrap{padding:12px}.hero{padding:20px}}
+</style></head>
+<body><main class="wrap">
+<section class="hero glass">
+<div class="eyebrow">AURA WORLD SEED // LIVE PUBLIC CARTRIDGES</div>
+<h1>ONE SUBSTRATE.<br>SWAPPABLE CAPABILITIES.</h1>
+<p class="lead">Four working apps rebuilt as independently updateable Aura cartridges, plus the public Arena itself. Mount the capability you need, test it, keep the receipt, and update the cartridge without reminting the substrate.</p>
+<div class="proof">
+<span class="pill good">BUILT WITH AURA · &lt; 30 MIN TOTAL WORK TIME</span>
+<span class="pill good">$0 EXTERNAL API SPEND</span>
+<span class="pill">NO PROVIDER API CALLS IN DEFAULT DEMOS</span>
+<span class="pill">LIGHTWEIGHT STATIC CARTRIDGES</span>
+<span class="pill">AIE / .AEV READY</span>
+</div>
+</section>
+<section class="grid">
+<article class="card glass"><div class="k">ARENA</div><h2>Aura World Seed</h2><p>The public Arena / world-seed surface. Agents can be sent directly here to inspect and interact with the substrate.</p><div class="meta">PUBLIC WORLD · REOPENABLE · SELF-CONTAINED</div><div class="row"><a class="btn primary" href="../">ENTER ARENA</a><a class="btn" href="registry.json">REGISTRY</a></div></article>
+<article class="card glass"><div class="k">GAMEPLAY</div><h2>Astral Cyber-Strike</h2><p>6-DoF rogue starfighter vertical slice with procedural/AIE scene logic, adaptive encounters, gamepad input, missiles, EMP, upgrades and scene-first export hooks.</p><div class="meta">AIE / VISUALPROGRAMIR · 6-DOF · PROCEDURAL AUDIO</div><div class="row"><a class="btn primary" href="game.html">PLAY</a></div></article>
+<article class="card glass"><div class="k">VOICE</div><h2>AuraSonic Voice Studio</h2><p>Consent-gated voice lab with local browser synthesis plus replaceable provider adapters. No credentials are embedded; the default public demo remains local-first.</p><div class="meta">LOCAL FALLBACK · PROVIDER ADAPTERS · CONSENT GATE</div><div class="row"><a class="btn primary" href="voice.html">OPEN STUDIO</a></div></article>
+<article class="card glass"><div class="k">DEVELOPER</div><h2>REA + Canonical Atomizer</h2><p>The external REA shell fused with Aura's canonical AEB-8 / capability-atomizer laws: decompose, inspect elements, compose a cleanroom recipe, test it in a sandbox and export a cartridge.</p><div class="meta">AEB-8 · EXACT REASSEMBLY · SANDBOX CANARY</div><div class="row"><a class="btn primary" href="atomizer.html">ATOMIZE</a></div></article>
+<article class="card glass"><div class="k">PERCEPTION</div><h2>Aura Focus Reader</h2><p>Adaptive RSVP reading with punctuation and complexity dwell, phrase chunks, rewind evidence, comprehension receipts and optional BCI-compatible pacing pulses.</p><div class="meta">100–2000 WPM · ADAPTIVE DWELL · RECEIPTS</div><div class="row"><a class="btn primary" href="reader.html">START READING</a></div></article>
+</section>
+<section class="note glass"><b>Architecture:</b> <code>stable substrate → mount cartridge → canary → capability → receipt → eject/update</code>. The cartridges do not inherit execution authority merely by being installed. AIE/.aev follows <code>SceneFirstVideoSecond</code>; algebraic compression is used where structure is earned and residual/source fallback is preserved where it is not.</section>
+</main></body></html>
