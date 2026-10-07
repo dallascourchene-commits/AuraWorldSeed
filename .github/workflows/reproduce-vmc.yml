@@ -1,0 +1,79 @@
+name: Reproduce Virtual Memory Crystal
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vmc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out public repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install benchmark dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy scipy scikit-learn
+
+      - name: Prepare original benchmark output path
+        run: |
+          sudo mkdir -p /mnt/data
+          sudo chmod 777 /mnt/data
+          mkdir -p benchmark-results
+
+      - name: Run VMC-001
+        run: |
+          python benchmarks/src/vmc_virtual_memory_crystal_v01.py | tee benchmark-results/vmc001_stdout.txt
+
+      - name: Run VMC-002
+        run: |
+          python benchmarks/src/vmc002_rubik_proof_crystal.py | tee benchmark-results/vmc002_stdout.txt
+
+      - name: Verify headline assertions
+        run: |
+          python - <<'PY'
+          import json, math, pathlib, shutil
+
+          v1_path = pathlib.Path("/mnt/data/tokyo_virtual_memory_crystal_v01/RESULTS__TOKYO_VIRTUAL_MEMORY_CRYSTAL_V0_1__20260917.json")
+          v2_path = pathlib.Path("/mnt/data/tokyo_athens_vmc002/results_vmc002.json")
+          v1 = json.loads(v1_path.read_text())
+          v2 = json.loads(v2_path.read_text())
+
+          q = v1["e8_lane"]["quantization"]
+          assert q["e8_mse_per_dimension"] < q["z8_mse_per_dimension"]
+          assert math.isclose(q["e8_mse_reduction_vs_z8"], 0.13916124765661608, rel_tol=1e-10)
+          assert q["e8_output_membership_fraction"] == 1.0
+          assert v1["archive"]["all_initial_reads_exact"] is True
+          assert v1["archive"]["all_reopen_reads_exact"] is True
+          assert v1["archive"]["worm_overwrite_blocked"] is True
+          assert v1["archive"]["single_byte_corruption_detected"] is True
+
+          qq = v2["quotient_local_consequence"]
+          assert qq["exact_outputs"] is True
+          assert qq["measured_speedup"] > 30
+          assert qq["high_entropy_exact"] is True
+          assert qq["high_entropy_speedup"] < 1.05
+
+          print("VMC-001 E8 reduction:", q["e8_mse_reduction_vs_z8"])
+          print("VMC-002 measured speedup:", qq["measured_speedup"])
+          print("VMC-002 high-entropy control:", qq["high_entropy_speedup"])
+          print("PASS: VMC headline assertions")
+
+          shutil.copytree("/mnt/data/tokyo_virtual_memory_crystal_v01", "benchmark-results/vmc001", dirs_exist_ok=True)
+          shutil.copytree("/mnt/data/tokyo_athens_vmc002", "benchmark-results/vmc002", dirs_exist_ok=True)
+          PY
+
+      - name: Preserve fresh VMC receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fresh-vmc-benchmark-receipts
+          path: benchmark-results/
