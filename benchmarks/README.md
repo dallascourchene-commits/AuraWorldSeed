@@ -43,6 +43,8 @@ https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/repro
 
 GitHub checks out this public repository on its own runner, compiles the standalone sources under `benchmarks/src/`, runs them, and prints fresh receipts into the Actions log. Timing numbers will vary by CPU; correctness/invariance checks are the important reproducibility target.
 
+**Verified public paired-control run:** [3-repeat run #37598118960](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/runs/37598118960) — completed successfully from commit `2f5e594fec651f0df0270bdaf0b811a98fe0c93c`. Its downloadable artifact contains the raw per-run JSON, environment record, and generated `COMPARISON.md`.
+
 ### Browser-only 24³ closure
 
 Open the self-contained browser benchmark directly:
