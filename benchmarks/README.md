@@ -22,6 +22,8 @@ For current external context see the [ARC Prize leaderboard](https://arcprize.or
 
 **Virtual Memory Crystal results:** [full VMC benchmark ledger](VIRTUAL_MEMORY_CRYSTAL.md) · [VMC-001 source](src/vmc_virtual_memory_crystal_v01.py) · [VMC-002 source](src/vmc002_rubik_proof_crystal.py) · [one-click VMC reproducer](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-vmc.yml)
 
+**Verified VMC public rerun:** [run #37610839443](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/runs/37610839443) — **35.9258×** structured-case speedup, **0.9475×** high-entropy control, **13.9161%** E8 MSE reduction.
+
 This page consolidates the benchmark work that was spread across Arena receipts, research notes, C++ programs, browser witnesses, and acceptance packets. It intentionally preserves failures, HOLDs, repairs, and claim ceilings instead of reporting only favorable results.
 
 ## Why the numbers matter: WITH vs WITHOUT
