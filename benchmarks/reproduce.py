@@ -64,8 +64,10 @@ def make_fixtures(fixtures: pathlib.Path) -> tuple[pathlib.Path, pathlib.Path]:
     structured = fixtures / "structured_128k.bin"
     randomish = fixtures / "deterministic_random_128k.bin"
 
-    pattern = b"AURA|L0-L1-L2-L3|REOPEN|GATE24|0123456789ABCDEF\n"
-    structured.write_bytes((pattern * ((131072 // len(pattern)) + 1))[:131072])
+    # Positive control: exact 256-byte periodic structure, repeated to 128 KiB.
+    # The microscope has an explicit periodic representation for periods up to 4096.
+    pattern = bytes(range(256))
+    structured.write_bytes(pattern * (131072 // len(pattern)))
 
     blocks = []
     i = 0
