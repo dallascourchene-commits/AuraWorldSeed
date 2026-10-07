@@ -1,6 +1,6 @@
 # AuraWorldSeed Benchmarks
 
-**Public reproducibility ledger — benchmark harvest for 2026-10-06 through 2026-10-07**
+[![Reproduce Core Aura Benchmarks](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml/badge.svg)](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)\n\n**Public reproducibility ledger — benchmark harvest for 2026-10-06 through 2026-10-07**
 
 This page consolidates the benchmark work that was spread across Arena receipts, research notes, C++ programs, browser witnesses, and acceptance packets. It intentionally preserves failures, HOLDs, repairs, and claim ceilings instead of reporting only favorable results.
 
