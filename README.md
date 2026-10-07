@@ -1,32 +1,63 @@
 # AuraWorldSeed
 
+> **START HERE:** [Open the Aura World Seed](https://dallascourchene-commits.github.io/AuraWorldSeed/) · [Latest release](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest) · [Download the V5 developer package](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip)
+
 **Executable Aura World Seed / Gem Arena + reproducibility home for AuraOS Paper XI Rev.2**
 
-This repository is the public software and reproducibility home for the Aura World Seed and Gem Arena lineage described in **AuraOS Paper XI Rev.2: Consequence-Local Computing and Reconstructible World Seeds**.
+AuraWorldSeed is the public software and reproducibility home for the Aura World Seed and Gem Arena lineage described in **AuraOS Paper XI Rev.2: Consequence-Local Computing and Reconstructible World Seeds**.
 
-Paper XI Rev.2 defensively publishes post-Paper-X work in Winstonian Physics, consequence-local computing, recursive scale/reification, virtual quantum-device modeling, structured quantum simulation, exact causal-cone replay, proof reuse, HDC/VSA routing, Crystalline Orphanim, Memory City, and feedback-first World Seed governance.
+## Start here
+
+You should not need prior instructions to find the current system.
+
+- **Explore / enter the World Seed in a browser:** https://dallascourchene-commits.github.io/AuraWorldSeed/
+- **Find the current release, even after future versions ship:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest
+- **Download the complete V5 developer package:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip
+- **Inspect the canonical repository:** https://github.com/dallascourchene-commits/AuraWorldSeed
+- **Read Paper XI Rev.2:** https://zenodo.org/records/23204234
+
+The root `index.html` is the canonical browser entry for the current World Seed. Large downloadable packages live in **GitHub Releases** so their published bytes can remain hash-pinned and independently verifiable rather than being silently substituted.
+
+### Which entry should I use?
+
+| Goal | Entry |
+| --- | --- |
+| I just want to see / enter it | **Open the World Seed** |
+| I want the complete developer package | **Latest release → Assets** |
+| I want code, provenance, licensing, and reproducibility material | **This repository** |
+| I want the technical publication | **Paper XI Rev.2 on Zenodo** |
+
+## What is this?
+
+This repository publishes the executable World Seed / Gem Arena together with reproducibility material for the post-Paper-X Aura work: Winstonian Physics, consequence-local computing, recursive scale/reification, virtual quantum-device modeling, structured quantum simulation, exact causal-cone replay, proof reuse, HDC/VSA routing, Crystalline Orphanim, Memory City, and feedback-first World Seed governance.
+
+## Current World Seed release identity
+
+The current V5 artifacts are hash-pinned for the Paper XI Rev.2 release.
+
+### Browser World Seed
+
+`AURA_WORLD_SEED__DEVELOPER_ONE_STOP_V5_D0__20261007.html`
+
+- size: **54,612,970 bytes**
+- SHA-256: `22e7fb9ef2cfc10b1545179450cb8062a1022e962f9f80597f6614c2b3651bb1`
+- repository browser entry: `index.html`
+
+### Full developer package
+
+`AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip`
+
+- size: **95,151,464 bytes**
+- SHA-256: `c977bff4fa9f6d0c6fd4fd3a97abb8dc932223370da26e102de0a298cdb5b2bc`
+- release: https://github.com/dallascourchene-commits/AuraWorldSeed/releases/tag/v5-d0-20261007
+- direct download: https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip
 
 ## Defensive-publication lineage
 
 - Paper X Rev.3 Zenodo record: https://zenodo.org/records/22177051
 - Paper XI Rev.2: https://zenodo.org/records/23204234
-- This repository: canonical software/reproducibility home.
-
-## Current World Seed release identity
-
-The V5 artifacts below are hash-pinned for the Paper XI Rev.2 release. Large binary/single-file artifacts should be attached to the repository's release rather than silently substituted with a different build.
-
-`AURA_WORLD_SEED__DEVELOPER_ONE_STOP_V5_D0__20261007.html`
-
-- size: 54,612,970 bytes
-- SHA-256: `22e7fb9ef2cfc10b1545179450cb8062a1022e962f9f80597f6614c2b3651bb1`
-
-Full developer package:
-
-`AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip`
-
-- size: 95,151,464 bytes
-- SHA-256: `c977bff4fa9f6d0c6fd4fd3a97abb8dc932223370da26e102de0a298cdb5b2bc`
+- AuraWorldSeed: canonical software/reproducibility home
+- Stable release pointer: https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest
 
 ## Commons, licensing, and developer ownership
 
