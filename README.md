@@ -28,13 +28,17 @@ Full developer package:
 - size: 95,151,464 bytes
 - SHA-256: `c977bff4fa9f6d0c6fd4fd3a97abb8dc932223370da26e102de0a298cdb5b2bc`
 
-## License and developer ownership
+## Commons, licensing, and developer ownership
 
-Covered Aura core/reference software is licensed **AGPL-3.0**.
+**Paper XI Rev.2 / technical publication:** CC BY 4.0. The paper, diagrams, explanatory text, and defensive-publication material are intended to remain freely shareable and reusable with attribution.
 
-Aura does **not** claim ownership of independently authored code merely because a developer used Aura, an Aura agent, the Gem/Arena, or a World Seed to create, refactor, test, or reason about it. Developers retain the rights they otherwise hold in their own independently authored code.
+**Aura World Seed / Gem Arena reference software:** Apache License 2.0. The software may be used, modified, distributed, and commercialized under the Apache-2.0 terms. Apache-2.0 also includes an express contributor patent grant for patent claims within its scope.
 
-That policy does not waive the AGPL: ordinary AGPL obligations can apply when downstream work copies, modifies, incorporates, or legally forms a derivative/combined work with covered Aura code.
+**Developer-created work:** Aura makes no ownership claim over independently authored downstream code merely because a developer used Aura, an Aura agent, the Gem/Arena, the World Seed, or Aura tooling to create, refactor, test, or reason about it. Rights, if any, remain with the person or entity otherwise entitled under applicable law and their agreements.
+
+**Defensive-publication intent:** the disclosed Aura architectures, methods, mathematics, combinations, variants, falsifiers, and implementation approaches are intentionally placed into the public technical record as prior art. The project does not assert that CC BY itself extinguishes patent rights; the public disclosure and dated provenance are the defensive-publication mechanism.
+
+See `docs/LICENSING_AND_COMMONS.md` for the project boundary.
 
 ## Claim boundary
 
