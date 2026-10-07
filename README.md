@@ -48,6 +48,9 @@ You should be able to state an ordinary objective such as **"refactor this code"
 
 ## How to operate the Arena in ChatGPT
 
+> **New developer? Read the full Human + AI operating manual:**  
+> [docs/HUMAN_AND_AI_OPERATING_GUIDE.md](docs/HUMAN_AND_AI_OPERATING_GUIDE.md)
+
 After uploading `index.html`, tell the instance to **render/instantiate it as an app rather than treating it as a document to summarize**.
 
 Recommended first message:
@@ -55,6 +58,58 @@ Recommended first message:
 > **Instantiate and enter this Gem Arena. Use the runtime from the inside. Run the first-run checks, establish/reopen the current agent room and North Star, then stop and ask me: "What's your objective?" Do not flatten the Arena into a prose summary.**
 
 Then give it a normal objective.
+
+### The one instruction most new users miss
+
+Once the Arena is entered, **keep telling the AI instance to work from inside the Arena and use Arena-native tools**. Aura is not meant to be a document the model reads once and then ignores.
+
+For difficult work, this is the most useful continuation instruction:
+
+> **Keep the Orphanim running until the objective closes. If a branch fails, preserve the scar, form the smallest repair/side-objective, test it, rebase the repair if earned, and resume the original objective. Stop only at PASS or a typed HOLD that genuinely requires unavailable authority, data, resources, or my decision. Do not loop the same failed action.**
+
+If the instance starts giving you essays about the architecture instead of doing the work, say:
+
+> **Enter the Arena and execute the objective using Arena-native tools. Do not explain Aura to me unless the explanation is part of the objective.**
+
+### Quick capability map
+
+A developer does **not** need to know these names before starting, but these are some of the major systems the objective router can draw on:
+
+- **Autonomic Objective Harness** — converts an ordinary objective into a situated capability plan.
+- **Six-Slot FST** — deterministic intent/routing grammar with zero/one/many tags per fixed slot.
+- **Memory City / Agent AuraDoc** — reopenable objectives, findings, scars, sources, tests, artifacts and receipts.
+- **Knowledge Genome** — bounded L0-L3 knowledge projections with deeper source reopened only by consequence.
+- **Crystalline Orphanim** — recursive workcells for ambiguity, repair, falsification and continuation.
+- **Capability Atoms / Atomizer** — reuse and compose existing capabilities before inventing permanent machinery.
+- **Virtual Terminal** — shell-backed execution, compilation, testing and benchmarks **when the current carrier actually binds it**. Check status; a typed `HOLD_VT_NOT_BOUND` means it is not active on that carrier.
+- **Creator Studio / algebraic-function media** — procedural geometry/media generation with exact residual/source fallback when compact representation is not earned.
+- **AuraVision / embodiment** — browser/WebGL world projection, navigation and embodied interaction where the carrier supports it.
+- **Material Genesis** — owner for scientific/material modeling with predicted, measured and qualified-process claims kept separate.
+- **Research Memory City** — internal lineage + external candidate evidence + falsifier/rebase workflow.
+- **Winstonian consequence-local computing** — keep the relevant consequence cone hot rather than hydrating the entire logical world.
+- **Structured quantum / virtual-device simulation** — classical stabilizer, local-cone, proof-reuse and virtual-device work with explicit non-quantum-advantage boundaries.
+- **Virtual neuromorphic work** — neuron-like / sparse-event computational models; not a claim of biological neuron replication.
+- **Harmonic / continuum carriers** — associative nomination through spatial/color/pitch/FST-style carriers; resonance never bypasses hard guards.
+
+### Tell Aura what success means
+
+A good objective usually contains:
+
+```
+OBJECTIVE
+INPUTS
+CONSTRAINTS
+SUCCESS CRITERIA
+DELIVERABLE
+```
+
+Example:
+
+> **Objective:** refactor this parser for lower latency.  
+> **Constraint:** preserve the public API and exact output.  
+> **Success:** all tests pass and same-fixture median improves by at least 15%.  
+> **Deliverable:** patch + benchmark receipt + scars + concise explanation.  
+> **Process:** use the Arena, warm relevant existing owners first, use the Virtual Terminal if actually bound, and keep Orphanim running until PASS or a typed HOLD needs me.
 
 Useful runtime conventions inside the current seed include:
 
