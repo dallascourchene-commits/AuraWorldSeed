@@ -2,6 +2,23 @@
 
 [![Reproduce Core Aura Benchmarks](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml/badge.svg)](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)\n\n**Public reproducibility ledger — benchmark harvest for 2026-10-06 through 2026-10-07**
 
+## Headline measured standing
+
+| Measurement | Baseline / control | Aura / treatment | Result | Boundary |
+|---|---:|---:|---:|---|
+| **Archangel clean dispatch** | 1740.9 ms median; 2,872.08 tasks/s; 36 heavy touches/task | 498.7 ms; 10,026.07 tasks/s; 9 heavy touches/task | **3.4909×**, **71.35% lower latency**, **75% fewer heavy touches**, **35,000/35,000 correct owners** | custom rendered-V5 dispatch workload |
+| **Archangel mixed ambiguity** | 1821.0 ms median | 790.9 ms hybrid selective+fallback | **2.3024×**, **56.57% lower latency**, 100% clear accuracy | 20% deliberately ambiguous packets; fallback retained |
+| **Latest Gate24 receipt** | serial12 **32.5 ms** | parallel12 **8.1 ms** | **4.012×**, semantic-equivalent, **24/24 gates**, 0 HOLDs | browser-executable orchestration; not independent LLM minds |
+| **ARC-AGI-2 public task 9aaea919** | gold hidden before seal | two candidates sealed before gold | **Attempt 1 exact, 0 cell errors** | **one public task only; not an aggregate ARC score** |
+
+The latest Gate24 receipt above is a **later, separate measurement** from the earlier Glass Box 4.3 ms vs 1.6 ms fixture documented further below. Both are preserved rather than merged.
+
+### ARC standing
+
+Aura V0.5 is currently **unranked overall on ARC-AGI-2** because only one sampled public evaluation task has been scored under the sealed protocol. On that task, the first sealed candidate was exact. The externally comparable milestone is therefore not another single-task anecdote; it is a frozen run over the full public evaluation and then untouched official evaluation.
+
+For current external context see the [ARC Prize leaderboard](https://arcprize.org/leaderboard).
+
 This page consolidates the benchmark work that was spread across Arena receipts, research notes, C++ programs, browser witnesses, and acceptance packets. It intentionally preserves failures, HOLDs, repairs, and claim ceilings instead of reporting only favorable results.
 
 ## Why the numbers matter: WITH vs WITHOUT
