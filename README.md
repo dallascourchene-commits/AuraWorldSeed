@@ -7,6 +7,7 @@
 | Measured area | WITHOUT / baseline | WITH / Aura path | Measured result | Standing |
 |---|---:|---:|---:|---|
 | **Archangel clean dispatch** | full crystalline cell: **1740.9 ms / 2,872.08 tasks/s** | selective neural dispatch: **498.7 ms / 10,026.07 tasks/s** | **3.4909×**, **71.35% lower latency**, **75% fewer heavy touches**, **35,000/35,000 correct owner selections** | **Very strong internal systems A/B** |
+| **Virtual Memory Crystal VMC-002** | full exact baseline **753.612 ms** | quotient + local-consequence route **21.027 ms** | **35.840×**, exact outputs; high-entropy control **0.9847×** | **Very strong structured-regime systems result; not universal** |
 | **Archangel mixed ambiguity** | full-cell median **1821.0 ms** | hybrid selective+fallback **790.9 ms** | **2.3024×**, **56.57% lower latency**, 100% clear-packet accuracy, 93.4–95.2% ambiguous-fallback capture | **Strong robustness A/B** |
 | **Latest Gate24 parallel/serial receipt** | serial 12-workcell path **32.5 ms** | parallel 12-workcell path **8.1 ms** | **4.012×**, same semantic root, **24/24 gates earned**, no HOLDs | **Good parallel acceleration; custom workload** |
 | **ARC-AGI-2 task `9aaea919`** | — | sealed two candidates before gold | **Attempt 1 exact, 0 cell errors** | **Exact success on one public task; aggregate standing unmeasured** |
@@ -29,7 +30,7 @@ Sources: [ARC Prize leaderboard](https://arcprize.org/leaderboard), [GPT-6 resul
 
 **Interpretation:** on the one ARC task measured under a pre-gold seal, Aura demonstrated exact task-level success. That is promising, but it does **not** establish a 90%+ ARC system. The next decisive measurement is the frozen V0.5 solver across the full 120-task public evaluation, followed by untouched semi-private/private evaluation.
 
-**Reproduce / inspect the evidence:** [benchmark ledger](benchmarks/README.md) · [independent reproduction guide](benchmarks/REPRODUCE.md) · [one-click GitHub runner](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)
+**Reproduce / inspect the evidence:** [benchmark ledger](benchmarks/README.md) · [VMC benchmark ledger](benchmarks/VIRTUAL_MEMORY_CRYSTAL.md) · [independent reproduction guide](benchmarks/REPRODUCE.md) · [core GitHub runner](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml) · [VMC GitHub runner](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-vmc.yml)
 
 ## ONE-FILE ENTRY — START HERE
 
