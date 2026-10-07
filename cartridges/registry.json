@@ -1,0 +1,57 @@
+{
+  "schema": "AuraPublicCartridgeRegistryV1",
+  "generated_at": "2026-10-07",
+  "base_url": "https://dallascourchene-commits.github.io/AuraWorldSeed",
+  "arena": {
+    "id": "aura.world_seed",
+    "url": "https://dallascourchene-commits.github.io/AuraWorldSeed/",
+    "role": "PUBLIC_ARENA_WORLD_SEED"
+  },
+  "laws": [
+    "Cartridge!=Arena",
+    "BaseSubstratePreserved",
+    "ReuseBeforeInvent",
+    "CapabilityCandidate!=AtomAdmission!=ExecutionAuthority",
+    "SceneFirstVideoSecond",
+    "NoCredentialsInCartridge",
+    "TestBeforePublish"
+  ],
+  "cartridges": [
+    {
+      "id": "creator.astral_cyber_strike_6dof",
+      "version": "1.0.0",
+      "entry": "game.html",
+      "url": "https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/game.html",
+      "kind": "GAMEPLAY",
+      "owner": "CREATOR_STUDIO",
+      "update_scope": "CARTRIDGE_ONLY"
+    },
+    {
+      "id": "audio.aurasonic_voice_studio",
+      "version": "1.0.0",
+      "entry": "voice.html",
+      "url": "https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/voice.html",
+      "kind": "AUDIO_VOICE",
+      "owner": "AUDIO_VOICE",
+      "update_scope": "CARTRIDGE_ONLY"
+    },
+    {
+      "id": "developer.rea_canonical_atomizer",
+      "version": "1.0.0",
+      "entry": "atomizer.html",
+      "url": "https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/atomizer.html",
+      "kind": "DEVELOPER_TOOL",
+      "owner": "J59_ATOMIZER_HOLODECK",
+      "update_scope": "CARTRIDGE_ONLY"
+    },
+    {
+      "id": "perception.adaptive_rsvp_reader",
+      "version": "1.0.0",
+      "entry": "reader.html",
+      "url": "https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/reader.html",
+      "kind": "PERCEPTION_READING",
+      "owner": "SENSORIUM",
+      "update_scope": "CARTRIDGE_ONLY"
+    }
+  ]
+}
