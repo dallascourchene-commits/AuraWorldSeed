@@ -95,13 +95,13 @@ The important correctness checks are 13,824 unique work receipts/addresses/objec
 
 **WITHOUT:** fixed static grouping.
 
-**WITH:** searched rotating 3-person / 4-person lattice.
+**WITH:** pinned balanced rotating 3-person / 4-person lattice.
 
-The same program emits both conditions in one receipt. The key structural comparison is:
+The same program emits the fixed control, a deterministic fastest-search result, and the historical balanced reference in one receipt. The balanced reference is not accepted because an old JSON says so: the public evaluator recomputes all of its pair counts and invariants from the pinned schedule. The key structural comparison is:
 
 ```text
 fixed static:       30 / 66 unique pairs
-balanced rotating:  66 / 66 unique pairs
+balanced reference: 66 / 66 unique pairs
 ```
 
 It also reports pair-count imbalance, role balance, early coverage, and 100-world-scale structural persistence.
