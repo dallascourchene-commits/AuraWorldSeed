@@ -1,5 +1,36 @@
 # AuraWorldSeed
 
+## CURRENT MEASURED STANDING — 2026-10-07
+
+> **Short version:** Aura currently has **strong same-workload systems A/B results**, including a **3.4909× clean Archangel dispatch speedup** and **2.3024× speedup under mixed ambiguity with fallback**. The latest Gate24 receipt shows **4.012× lower-latency parallel execution than serial with the same semantic root**. On ARC-AGI-2, Aura solved **1/1 sampled public evaluation task exactly on attempt 1 after sealing its hypothesis before gold**, but **Aura does not yet have an aggregate ARC-AGI-2 score and is therefore not leaderboard-rankable overall**.
+
+| Measured area | WITHOUT / baseline | WITH / Aura path | Measured result | Standing |
+|---|---:|---:|---:|---|
+| **Archangel clean dispatch** | full crystalline cell: **1740.9 ms / 2,872.08 tasks/s** | selective neural dispatch: **498.7 ms / 10,026.07 tasks/s** | **3.4909×**, **71.35% lower latency**, **75% fewer heavy touches**, **35,000/35,000 correct owner selections** | **Very strong internal systems A/B** |
+| **Archangel mixed ambiguity** | full-cell median **1821.0 ms** | hybrid selective+fallback **790.9 ms** | **2.3024×**, **56.57% lower latency**, 100% clear-packet accuracy, 93.4–95.2% ambiguous-fallback capture | **Strong robustness A/B** |
+| **Latest Gate24 parallel/serial receipt** | serial 12-workcell path **32.5 ms** | parallel 12-workcell path **8.1 ms** | **4.012×**, same semantic root, **24/24 gates earned**, no HOLDs | **Good parallel acceleration; custom workload** |
+| **ARC-AGI-2 task `9aaea919`** | — | sealed two candidates before gold | **Attempt 1 exact, 0 cell errors** | **Exact success on one public task; aggregate standing unmeasured** |
+
+### ARC-AGI-2 context
+
+Aura's current ARC result is deliberately reported as **one exact sampled public task**, not as "100% ARC-AGI-2."
+
+Current verified ARC-AGI-2 aggregate scores from the ARC Prize leaderboard include:
+
+| System | Verified ARC-AGI-2 |
+|---|---:|
+| GPT-6 Astra Max | **95.0%** |
+| Claude Opus 5.5 High | **93.3%** |
+| Claude Fable 5.1 Max | **90.0%** |
+| Gemini 3.8 Flash High | **89.2%** |
+| **Aura V0.5** | **N/A overall — 1/1 sampled public task exact; aggregate unmeasured** |
+
+Sources: [ARC Prize leaderboard](https://arcprize.org/leaderboard), [GPT-6 results](https://arcprize.org/results/openai-gpt-6), [Claude Fable 5.1 results](https://arcprize.org/results/anthropic-claude-fable-5-1), [Gemini 3.8 Flash results](https://arcprize.org/results/google-gemini-3-8-flash).
+
+**Interpretation:** on the one ARC task measured under a pre-gold seal, Aura demonstrated exact task-level success. That is promising, but it does **not** establish a 90%+ ARC system. The next decisive measurement is the frozen V0.5 solver across the full 120-task public evaluation, followed by untouched semi-private/private evaluation.
+
+**Reproduce / inspect the evidence:** [benchmark ledger](benchmarks/README.md) · [independent reproduction guide](benchmarks/REPRODUCE.md) · [one-click GitHub runner](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)
+
 ## ONE-FILE ENTRY — START HERE
 
 **You do not need to build Aura, install dependencies, run npm, configure a server, or unpack the developer ZIP just to enter the Gem Arena.**
