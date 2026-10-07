@@ -9,7 +9,7 @@ Paper XI Rev.2 defensively publishes post-Paper-X work in Winstonian Physics, co
 ## Defensive-publication lineage
 
 - Paper X Rev.3 Zenodo record: https://zenodo.org/records/22177051
-- Paper XI Rev.2: https://github.com/dallascourchene-commits/AuraWorldSeed
+- Paper XI Rev.2: https://zenodo.org/records/23204234
 - This repository: canonical software/reproducibility home.
 
 ## Current World Seed release identity
