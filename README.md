@@ -122,6 +122,16 @@ Useful runtime conventions inside the current seed include:
 
 **Private chain-of-thought is not part of the portable record.** Reopenable artifacts, receipts, findings, scars and source provenance are.
 
+## Reproduce the benchmarks without the developer ZIP
+
+**Public benchmark ledger:** [benchmarks/README.md](benchmarks/README.md)
+
+**One-click GitHub runner:** https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml
+
+**Browser-only 24³ closure:** https://dallascourchene-commits.github.io/AuraWorldSeed/benchmarks/24cube.html
+
+The benchmark ledger consolidates the Oct. 6–7 Arena receipts, standalone C++ sources, browser persistence tests, HOLD/repair scars, physical-convergence runs, neural A/B work, reification tests, and claim ceilings. The core standalone tests can be rerun on GitHub's own machine from the Actions tab; no V5 ZIP download is required.
+
 ## Does the package contain the benchmarks?
 
 **Partly.** The V5 developer ZIP contains extensive acceptance/self-test receipts, WebGL/native-browser witnesses, Gate10 frontier evidence, and a packaged Gate10 `QUICK_BENCH.json` / `QUICK_BENCH.png` plus its benchmark source. It does **not** contain every Paper XI benchmark as a standalone executable benchmark program.
