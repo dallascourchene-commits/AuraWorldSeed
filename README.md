@@ -1,3 +1,8 @@
+> ## Live Arena & Creator Cartridges
+> **Built with Aura in under half an hour total work time · $0 external API spend · lightweight static cartridges.**
+>
+> [Enter the Arena](https://dallascourchene-commits.github.io/AuraWorldSeed/) · [Open the Cartridge Gallery](https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/) · [Game](https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/game.html) · [Voice](https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/voice.html) · [Atomizer](https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/atomizer.html) · [Speed Reader](https://dallascourchene-commits.github.io/AuraWorldSeed/cartridges/reader.html)
+
 # AuraWorldSeed
 
 ## CURRENT MEASURED STANDING — 2026-10-07
