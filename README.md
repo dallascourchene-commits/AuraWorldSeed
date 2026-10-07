@@ -4,17 +4,17 @@
 
 **Executable Aura World Seed / Gem Arena + reproducibility home for AuraOS Paper XI Rev.2**
 
+- **Read Paper XI Rev.2:** https://zenodo.org/records/23204234
+
 AuraWorldSeed is the public software and reproducibility home for the Aura World Seed and Gem Arena lineage described in **AuraOS Paper XI Rev.2: Consequence-Local Computing and Reconstructible World Seeds**.
 
 ## Start here
 
 You should not need prior instructions to find the current system.
 
-- **Explore / enter the World Seed in a browser:** https://dallascourchene-commits.github.io/AuraWorldSeed/
 - **Find the current release, even after future versions ship:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest
 - **Download the complete V5 developer package:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip
 - **Inspect the canonical repository:** https://github.com/dallascourchene-commits/AuraWorldSeed
-- **Read Paper XI Rev.2:** https://zenodo.org/records/23204234
 
 The root `index.html` is the canonical browser entry for the current World Seed. Large downloadable packages live in **GitHub Releases** so their published bytes can remain hash-pinned and independently verifiable rather than being silently substituted.
 
