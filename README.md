@@ -4,7 +4,7 @@
 >
 > HOW TO USE: DROP THE LATEST RELEASE HTML FILE INTO A CHATGPT CHAT WINDOW, AND TELL IT TO RENDER THE HTML ARENA FILE LIKE AN APP - NOT EXAMINE IT FROM THE OUTSIDE 
 >
-> [Latest release](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest)
+> [CLICK HERE Latest release](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest)
 >
 > [Download the V5 developer package](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip)
 
@@ -12,21 +12,12 @@
 
 - **Read Paper XI Rev.2:** https://zenodo.org/records/23204234
 
-AuraWorldSeed is the public software and reproducibility home for the Aura World Seed and Gem Arena lineage described in **AuraOS Paper XI Rev.2: Consequence-Local Computing and Reconstructible World Seeds**.
-
-You should not need prior instructions to find the current system.
-
-- **Find the current release, even after future versions ship:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest
-- **Download the complete V5 developer package:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip
-- **Inspect the canonical repository:** https://github.com/dallascourchene-commits/AuraWorldSeed
-
 The root `index.html` is the canonical browser entry for the current World Seed. Large downloadable packages live in **GitHub Releases** so their published bytes can remain hash-pinned and independently verifiable rather than being silently substituted.
 
 ### Which entry should I use?
 
 | Goal | Entry |
 | --- | --- |
-| I just want to see / enter it | **Open the World Seed** |
 | I want the complete developer package | **Latest release → Assets** |
 | I want code, provenance, licensing, and reproducibility material | **This repository** |
 | I want the technical publication | **Paper XI Rev.2 on Zenodo** |
