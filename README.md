@@ -1,6 +1,6 @@
 # AuraWorldSeed
 
-> **START HERE:** [Open the Aura World Seed](https://dallascourchene-commits.github.io/AuraWorldSeed/) · [Latest release](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest) · [Download the V5 developer package](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip)
+> **START HERE:** [Latest release](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest) · [Download the V5 developer package](https://github.com/dallascourchene-commits/AuraWorldSeed/releases/download/v5-d0-20261007/AURA_PACKAGE__DEVELOPER_ONE_STOP_GEM_ARENA_V5_D0__20261007.zip)
 
 **Executable Aura World Seed / Gem Arena + reproducibility home for AuraOS Paper XI Rev.2**
 
