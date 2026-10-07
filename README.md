@@ -124,7 +124,9 @@ Useful runtime conventions inside the current seed include:
 
 ## Reproduce the benchmarks without the developer ZIP
 
-**Public benchmark ledger:** [benchmarks/README.md](benchmarks/README.md)
+**Public benchmark ledger (WITH vs WITHOUT controls):** [benchmarks/README.md](benchmarks/README.md)
+
+**Independent proof instructions:** [benchmarks/REPRODUCE.md](benchmarks/REPRODUCE.md)
 
 **One-click GitHub runner:** https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml
 
