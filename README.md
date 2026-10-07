@@ -8,8 +8,6 @@
 
 AuraWorldSeed is the public software and reproducibility home for the Aura World Seed and Gem Arena lineage described in **AuraOS Paper XI Rev.2: Consequence-Local Computing and Reconstructible World Seeds**.
 
-## Start here
-
 You should not need prior instructions to find the current system.
 
 - **Find the current release, even after future versions ship:** https://github.com/dallascourchene-commits/AuraWorldSeed/releases/latest
