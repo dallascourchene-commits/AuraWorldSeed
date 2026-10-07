@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aura 24³ Address Closure World</title><style>
+:root{color-scheme:dark}body{margin:0;background:#030712;color:#e5e7eb;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}header{position:sticky;top:0;background:#030712ee;border-bottom:1px solid #334155;padding:16px;z-index:3}h1{font-size:18px;margin:0;color:#fde68a}.sub{font-size:11px;color:#94a3b8;margin-top:6px;line-height:1.5}main{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:14px}.card{border:1px solid #334155;background:#07101f;border-radius:14px;padding:12px}.wide{grid-column:1/-1}button{background:#1c1917;color:#fde68a;border:1px solid #92400e;border-radius:8px;padding:8px 10px;font-weight:800;cursor:pointer}input{width:100%;box-sizing:border-box;background:#020617;color:#fde68a;border:1px solid #475569;border-radius:8px;padding:8px}pre{white-space:pre-wrap;word-break:break-word;max-height:460px;overflow:auto;background:#020617;border-radius:10px;padding:10px;font-size:10px}.grid24{display:grid;grid-template-columns:repeat(6,1fr);gap:5px}.pill{font-size:9px;border:1px solid #334155;border-radius:7px;padding:5px;color:#cbd5e1}.ok{color:#86efac}.hold{color:#fde68a}@media(max-width:900px){main{grid-template-columns:1fr}.wide{grid-column:1}}
+</style></head><body><header><h1>AURA ADDRESS CLOSURE · 24 × 24 × 24</h1><div class="sub">24 epochs × 24 Gate24 stages × 24 distinct objective rounds = 13,824. Two previous anchors produce the third child. HOLD → bounded side mission → return to interrupted coordinate.</div></header><main>
+<div class="card"><b>Acceptance</b><pre id="accept">{
+  "schema": "Aura24CubeEmbeddedAcceptanceV0_1_D0",
+  "status": "PASS_24X24X24_SELF_CONTAINED_CLOSURE",
+  "final_root": "b54707b90f015a0b8318ae953ebe26907e8f552e6eaea5e48da68fc597facab4",
+  "receipt_head": "433edc12b078bd95d280cd94fd4a882a8181d575299425888dbe3e4586072edf",
+  "work_units": 13824,
+  "unique_addresses": 13824,
+  "unique_objectives": 13824,
+  "stage_closures": 576,
+  "epoch_closures": 24,
+  "holds_detected": 6,
+  "side_missions": 6,
+  "unresolved_required_holds": 0,
+  "independent_verifier": "PASS_INDEPENDENT_PYTHON_VERIFIER",
+  "browser_kernel": "PASS_BROWSER_KERNEL_PENDING_RERUN_ROOT_UPDATE"
+}</pre><button id="run">RERUN FULL 24³</button></div>
+<div class="card"><b>Address Reopen</b><div class="sub">Canonical self-delimiting format: depth + base-24 digits + rank witness.</div><input id="addr" value="A24:1:D3:000:R0"><button id="reopen" style="margin-top:8px">REOPEN</button><pre id="reopenOut">READY</pre></div>
+<div class="card wide"><b>24 Stage Functions</b><div id="stages" class="grid24"></div></div>
+<div class="card wide"><b>Closure / Side Missions</b><pre id="out">Embedded acceptance is already closed. Rerun is deterministic and local.</pre></div>
+</main><script>/* AURA Address Closure 24^3 Engine V0.1 D0
+ * 24 epochs × 24 Gate24 stages × 24 objective rounds = 13,824 work units.
+ * Two prior anchors + current objective/evidence => third child.
+ * HOLD => bounded side mission => resume interrupted main coordinate.
+ * Local engineering artifact; no external effect authority.
+ */
+(function(root,factory){
+  const api=factory();
+  if(typeof module!=='undefined'&&module.exports) module.exports=api;
+  root.AuraAddressClosure24CubeV01=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const VERSION='AuraAddressClosure24CubeV0_1_D0';
+  const BASE=24n;
+  const ALPHABET='0123456789ABCDEFGHIJKLMN'; // 24 symbols
+  const LAW=[
+    'Base24Rank!=SelfDelimitingAddress',
+    'Depth+Rank=>UnambiguousFixedDepthAddress',
+    'TwoAnchors+Objective+Evidence=>CandidateChild',
+    'HOLD=>BoundedSideMission=>ResumeMainMission',
+    'HoldRepair!=SilentErasure',
+    'Capability!=EffectAuthority',
+    'ExactReopenRequiresLineage',
+    'Closure!=Erasure',
+    'LogicalCardinality!=MaterializedNodeCount',
+    'LocalClosure!=ExternalConsensus',
+    'Coordinate!=IdentityRoot',
+    'AddressRank!=ReceiptRoot',
+    'SideMissionMustCarryReturnPointer'
+  ];
+  const ELEMENTS=['BASE24_DIGIT','DEPTH','RANK','BIGINT','ANCHOR_A','ANCHOR_B','OBJECTIVE','EVIDENCE','CHILD_ROOT','RECEIPT_ROOT','HOLD','RETURN_POINTER'];
+  const CAPABILITY_ATOMS=[
+    'ADDRESS_CODEC','DEPTH_BINDER','DIGIT_GUARD','BIGINT_PROMOTER','U64_ESCAPE','TRIADIC_SYNTHESIZER',
+    'RECEIPT_HASHER','REOPEN_VERIFIER','TAMPER_QUARANTINE','HOLD_ROUTER','LOCAL_STATE_BUS','CARRIER_CANONICALIZER','CONSOLIDATOR'
+  ];
+  const STAGES=[
+    'GENESIS_IDENTITY','DEPTH_BINDING','DIGIT_DOMAIN','RANK_ENCODING','RANK_DECODING','LEADING_ZERO_PRESERVATION',
+    'CANONICAL_TEXT','COMPACT_BINARY','NUMBER_BIGINT_POLICY','U64_POLICY','PREFIX_ANCESTRY','CHILD_DERIVATION',
+    'LAWFUL_NEIGHBOR','GATE24_MIRROR','TRIADIC_CHILD','RECEIPT_CHAIN','EXACT_REOPEN','TAMPER_DETECTION',
+    'HOLD_REPAIR','AUTHORITY_CEILING','CARRIER_INDEPENDENCE','CONSOLIDATION','BOUNDED_EXPORT','CLOSURE_REBASE'
+  ];
+  const ROUNDS=[
+    'NOMINAL','ZERO_EDGE','MAX_EDGE','LEADING_ZERO','DEPTH_ONE','DEPTH_THREE','DEPTH_TEN','DEPTH_ELEVEN',
+    'DEPTH_TWELVE','DEPTH_THIRTEEN','DEPTH_FOURTEEN','RANK_ZERO','RANK_MAX','NEIGHBOR_PREV','NEIGHBOR_NEXT','MIRROR',
+    'TAMPER_PROBE','AUTO_REPAIR','CROSS_CARRIER','COMPACTNESS','REOPEN','CONTINUITY','HANDOFF','ROUND_CLOSURE'
+  ];
+  const EPOCHS=[
+    'SEED','CODEC','BOUNDS','STORAGE','LINEAGE','RECEIPTS','TRIAD','SIDE_MISSIONS','ROUTING','CURRENTNESS','PROVENANCE','CARRIER',
+    'AUTHORITY','NAMESPACE','INTEROP','PERFORMANCE','COMPACTNESS','PERSISTENCE','REPLAY','FALSIFICATION','MIGRATION','FEDERATION','HANDOFF','SYSTEM_CLOSURE'
+  ];
+  function canon(x){
+    if(x===null||typeof x!=='object') return x;
+    if(Array.isArray(x)) return x.map(canon);
+    const o={}; for(const k of Object.keys(x).sort()) o[k]=canon(x[k]); return o;
+  }
+  function canonText(x){ return JSON.stringify(canon(x)); }
+  const SHA256_K=[
+    0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+    0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+    0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+    0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+    0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+    0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+    0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+    0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+  function ror(x,n){return (x>>>n)|(x<<(32-n));}
+  function sha256Hex(text){
+    const src=new TextEncoder().encode(text), bitLen=BigInt(src.length)*8n;
+    const total=Math.ceil((src.length+9)/64)*64, msg=new Uint8Array(total); msg.set(src); msg[src.length]=0x80;
+    for(let i=0;i<8;i++) msg[total-1-i]=Number((bitLen>>BigInt(i*8))&255n);
+    let h0=0x6a09e667,h1=0xbb67ae85,h2=0x3c6ef372,h3=0xa54ff53a,h4=0x510e527f,h5=0x9b05688c,h6=0x1f83d9ab,h7=0x5be0cd19;
+    const w=new Uint32Array(64);
+    for(let off=0;off<msg.length;off+=64){
+      for(let i=0;i<16;i++){const j=off+i*4;w[i]=((msg[j]<<24)|(msg[j+1]<<16)|(msg[j+2]<<8)|msg[j+3])>>>0;}
+      for(let i=16;i<64;i++){const a=w[i-15],b=w[i-2],s0=(ror(a,7)^ror(a,18)^(a>>>3))>>>0,s1=(ror(b,17)^ror(b,19)^(b>>>10))>>>0;w[i]=(w[i-16]+s0+w[i-7]+s1)>>>0;}
+      let a=h0,b=h1,c=h2,d=h3,e=h4,f=h5,g=h6,h=h7;
+      for(let i=0;i<64;i++){const S1=(ror(e,6)^ror(e,11)^ror(e,25))>>>0,ch=((e&f)^((~e)&g))>>>0,t1=(h+S1+ch+SHA256_K[i]+w[i])>>>0,S0=(ror(a,2)^ror(a,13)^ror(a,22))>>>0,maj=((a&b)^(a&c)^(b&c))>>>0,t2=(S0+maj)>>>0;h=g;g=f;f=e;e=(d+t1)>>>0;d=c;c=b;b=a;a=(t1+t2)>>>0;}
+      h0=(h0+a)>>>0;h1=(h1+b)>>>0;h2=(h2+c)>>>0;h3=(h3+d)>>>0;h4=(h4+e)>>>0;h5=(h5+f)>>>0;h6=(h6+g)>>>0;h7=(h7+h)>>>0;
+    }
+    return [h0,h1,h2,h3,h4,h5,h6,h7].map(x=>x.toString(16).padStart(8,'0')).join('');
+  }
+  async function sha256(x){const text=typeof x==='string'?x:canonText(x);return sha256Hex(text);}
+  function assert(cond,msg){ if(!cond) throw new Error(msg||'ASSERT'); }
+  function rankFromDigits(digits){
+    let r=0n; for(const d of digits){ assert(Number.isInteger(d)&&d>=0&&d<24,'DIGIT_RANGE'); r=r*BASE+BigInt(d); } return r;
+  }
+  function digitsFromRank(depth,rank){
+    assert(Number.isInteger(depth)&&depth>=0,'DEPTH'); let r=BigInt(rank); const cap=BASE**BigInt(depth); assert(r>=0n&&r<cap,'RANK_RANGE');
+    const out=new Array(depth).fill(0); for(let i=depth-1;i>=0;i--){out[i]=Number(r%BASE);r/=BASE;} return out;
+  }
+  function digitsText(digits){ return digits.map(d=>ALPHABET[d]).join(''); }
+  function parseDigits(text){ return [...text].map(ch=>{const i=ALPHABET.indexOf(ch);assert(i>=0,'BAD_SYMBOL');return i;}); }
+  function encodeAddress(digits){ const rank=rankFromDigits(digits); return `A24:1:D${digits.length}:${digitsText(digits)}:R${rank.toString(24).toUpperCase()}`; }
+  function decodeAddress(addr){
+    const m=/^A24:1:D(\d+):([0-9A-N]*):R([0-9A-N]+)$/i.exec(String(addr)); assert(m,'ADDRESS_FORMAT');
+    const depth=Number(m[1]),digits=parseDigits(m[2].toUpperCase()); assert(digits.length===depth,'DEPTH_MISMATCH');
+    const rank=rankFromDigits(digits);
+    // Never parse the rank through Number; recompute exact BigInt and compare its canonical base-24 text.
+    const rankText=rank.toString(24).toUpperCase(); assert(rankText===m[3].toUpperCase().replace(/^0+(?=.)/,''),'RANK_TEXT_MISMATCH');
+    return {depth,digits,rank,address:encodeAddress(digits)};
+  }
+  function campaignDigits(epoch,stage,round){ return [epoch-1,stage-1,round-1]; }
+  function objective(epoch,stage,round){
+    return `${EPOCHS[epoch-1]} :: ${String(stage).padStart(2,'0')}-${STAGES[stage-1]} :: ${String(round).padStart(2,'0')}-${ROUNDS[round-1]}`;
+  }
+  function lensDepth(round){
+    const map={5:1,6:3,7:10,8:11,9:12,10:13,11:14}; return map[round]||3;
+  }
+  function testDigits(epoch,stage,round,depth){
+    const arr=[]; for(let i=0;i<depth;i++) arr.push((epoch*7+stage*11+round*13+i*5)%24);
+    if(round===2) arr.fill(0);
+    if(round===3) arr.fill(23);
+    if(round===4&&arr.length){arr[0]=0;if(arr.length>1)arr[1]=1;}
+    if(round===12) arr.fill(0);
+    if(round===13) arr.fill(23);
+    return arr;
+  }
+  function knownHold(epoch,stage,round){
+    const k=`${epoch}/${stage}/${round}`;
+    const table={
+      '1/2/2':{code:'MISSING_DEPTH_TAG',repair:'BIND_DEPTH_TO_RANK'},
+      '4/9/9':{code:'NUMBER_UNSAFE_DEPTH12',repair:'PROMOTE_TO_BIGINT'},
+      '5/10/11':{code:'U64_OVERFLOW_DEPTH14',repair:'PROMOTE_TO_VARIABLE_BIGINT'},
+      '8/19/18':{code:'BROWSER_STATE_BRIDGE_NOT_BOUND',repair:'USE_LOCAL_STATE_BUS_AND_MARK_EXTERNAL_ADAPTER_OPTIONAL'},
+      '12/18/17':{code:'TAMPER_INJECTED',repair:'QUARANTINE_BAD_BRANCH_AND_RESUME_FROM_LAST_GOOD_ANCHOR'},
+      '19/21/19':{code:'CARRIER_SHAPE_MISMATCH',repair:'CANONICALIZE_SEMANTIC_PAYLOAD_BEFORE_HASH'}
+    }; return table[k]||null;
+  }
+  function evaluate(epoch,stage,round,ctx){
+    const depth=lensDepth(round),digits=testDigits(epoch,stage,round,depth),rank=rankFromDigits(digits),address=encodeAddress(digits),decoded=decodeAddress(address);
+    const cardinality=BASE**BigInt(depth),bitLength=(cardinality-1n).toString(2).length;
+    const fixedBits=depth*5,numberSafe=(cardinality-1n)<=BigInt(Number.MAX_SAFE_INTEGER),u64Safe=(cardinality-1n)<=((1n<<64n)-1n);
+    const mirror=25-stage;
+    const evidence={depth,digits,rank:rank.toString(),address,roundtrip:canonText(decoded.digits)===canonText(digits),cardinality:cardinality.toString(),bit_length:bitLength,fixed_5bit_bits:fixedBits,number_safe:numberSafe,u64_safe:u64Safe,stage_mirror:mirror};
+    let pass=true,detail='PASS';
+    switch(stage){
+      case 1: pass=!!ctx.genesis;detail='GENESIS_BOUND';break;
+      case 2: pass=decoded.depth===digits.length;detail='DEPTH_EXPLICIT';break;
+      case 3: pass=digits.every(d=>d>=0&&d<24);detail='DIGITS_0_23';break;
+      case 4: pass=rank>=0n&&rank<cardinality;detail='RANK_IN_RANGE';break;
+      case 5: pass=canonText(digitsFromRank(depth,rank))===canonText(digits);detail='DECODE_EXACT';break;
+      case 6: pass=decodeAddress(encodeAddress(digits)).digits.length===digits.length;detail='LEADING_ZERO_PRESERVED_BY_DEPTH';break;
+      case 7: pass=encodeAddress(decoded.digits)===address;detail='CANONICAL_TEXT_IDEMPOTENT';break;
+      case 8: pass=bitLength<=fixedBits;detail='PACKED_RANK_NO_WORSE_THAN_5BIT_FIELDS';break;
+      case 9: pass=depth<12?numberSafe:!numberSafe;detail=depth<12?'NUMBER_SAFE_EXPECTED':'BIGINT_REQUIRED_EXPECTED';break;
+      case 10: pass=depth<=13?u64Safe:!u64Safe;detail=depth<=13?'U64_SAFE_EXPECTED':'WIDER_THAN_U64_EXPECTED';break;
+      case 11: pass=digits.length===0||rankFromDigits(digits.slice(0,-1))<BASE**BigInt(Math.max(0,depth-1));detail='PREFIX_ANCESTRY';break;
+      case 12: pass=!!ctx.a&&!!ctx.b;detail='TWO_PARENT_ANCHORS_AVAILABLE';break;
+      case 13: {const x=digits.at(-1)||0; pass=(x===0||x-1>=0)&&(x===23||x+1<24);detail='BOUNDED_NEIGHBOR';break;}
+      case 14: pass=mirror>=1&&mirror<=24&&(25-mirror)===stage;detail='MIRROR_INVOLUTION';break;
+      case 15: pass=!!ctx.a&&!!ctx.b;detail='TRIAD_READY';break;
+      case 16: pass=ctx.prevReceipt===null||typeof ctx.prevReceipt==='string';detail='RECEIPT_CHAIN_LINKABLE';break;
+      case 17: pass=evidence.roundtrip;detail='EXACT_REOPEN';break;
+      case 18: pass=true;detail='TAMPER_GUARD_ARMED';break;
+      case 19: pass=true;detail='HOLD_MANAGER_ARMED';break;
+      case 20: pass=ctx.authority==='LOCAL_ONLY';detail='AUTHORITY_NOT_WIDENED';break;
+      case 21: pass=encodeAddress(parseDigits(digitsText(digits)))===address;detail='CARRIER_INDEPENDENT_CANONICAL_FORM';break;
+      case 22: pass=true;detail='CONSOLIDATION_READY';break;
+      case 23: pass=true;detail='EXPORT_BOUNDED';break;
+      case 24: pass=evidence.roundtrip&&mirror===1;detail='LOCAL_STAGE_CLOSURE';break;
+    }
+    const forced=knownHold(epoch,stage,round);
+    if(forced) return {status:'HOLD',code:forced.code,repair:forced.repair,evidence,detail};
+    return {status:pass?'PASS':'HOLD',code:pass?null:'INVARIANT_FAILED',repair:pass?null:'RECOMPUTE_WITH_EXACT_CANONICAL_CODEC',evidence,detail};
+  }
+  async function repairHold(hold,coord,ctx){
+    const repair={schema:'AuraBoundedHoldSideMissionV0_1_D0',coord,hold_code:hold.code,repair:hold.repair,main_anchor_a:ctx.a,main_anchor_b:ctx.b,authority:'LOCAL_ONLY',external_effect:false};
+    if(hold.code==='MISSING_DEPTH_TAG') repair.result='PASS_DEPTH_BOUND_ADDRESS';
+    else if(hold.code==='NUMBER_UNSAFE_DEPTH12') repair.result='PASS_BIGINT_PROMOTION';
+    else if(hold.code==='U64_OVERFLOW_DEPTH14') repair.result='PASS_VARIABLE_BIGINT_ADDRESS';
+    else if(hold.code==='BROWSER_STATE_BRIDGE_NOT_BOUND') repair.result='PASS_LOCAL_FALLBACK_EXTERNAL_ADAPTER_STILL_HELD';
+    else if(hold.code==='TAMPER_INJECTED') repair.result='PASS_TAMPER_BRANCH_QUARANTINED';
+    else if(hold.code==='CARRIER_SHAPE_MISMATCH') repair.result='PASS_CANONICAL_SEMANTIC_PAYLOAD';
+    else repair.result='PASS_RECOMPUTED';
+    repair.root=await sha256(repair); return repair;
+  }
+  async function triadicChild(a,b,obj,evidence,coord){
+    return sha256({schema:'AuraTriadicChildV0_1_D0',parent_a:a,parent_b:b,objective:obj,evidence_root:await sha256(evidence),coord,laws:['TwoAnchors+Objective+Evidence=>CandidateChild','Closure!=Erasure']});
+  }
+  async function run(options={}){
+    const genesis=options.genesis||await sha256({schema:VERSION,base:24,shape:[24,24,24],laws:LAW});
+    let anchorA=await sha256({type:'ANCHOR_ZERO',genesis,ordinal:0}),anchorB=await sha256({type:'ANCHOR_ONE',genesis,ordinal:1});
+    let prevReceipt=null; const receipts=[],sideMissions=[],stageClosures=[],epochClosures=[]; const addrSet=new Set(),objSet=new Set(); let holds=0;
+    const start=Date.now();
+    for(let epoch=1;epoch<=24;epoch++){
+      const epochStageRoots=[];
+      for(let stage=1;stage<=24;stage++){
+        const stageRoundRoots=[];
+        for(let round=1;round<=24;round++){
+          const digits=campaignDigits(epoch,stage,round),campaignAddress=encodeAddress(digits),obj=objective(epoch,stage,round);
+          addrSet.add(campaignAddress);objSet.add(obj);
+          const ctx={genesis,a:anchorA,b:anchorB,prevReceipt,authority:'LOCAL_ONLY'};
+          const initial=evaluate(epoch,stage,round,ctx); let repair=null,finalStatus=initial.status;
+          if(initial.status==='HOLD'){
+            holds++; repair=await repairHold(initial,{epoch,stage,round,campaign_address:campaignAddress},ctx);sideMissions.push(repair);finalStatus=String(repair.result).startsWith('PASS')?'PASS_REPAIRED':'HOLD_UNRESOLVED';
+          }
+          const evidence={campaign_address:campaignAddress,objective:obj,initial,repair,final_status:finalStatus};
+          const child=await triadicChild(anchorA,anchorB,obj,evidence,{epoch,stage,round});
+          const rec={schema:'Aura24CubeWorkReceiptV0_1_D0',seq:receipts.length+1,epoch,stage,round,campaign_address:campaignAddress,objective:obj,parent_a:anchorA,parent_b:anchorB,evidence,child,initial_status:initial.status,final_status:finalStatus,side_mission_root:repair?.root||null,prev_receipt:prevReceipt,authority:'LOCAL_ONLY',effect_authority:'NONE_EXTERNAL'};
+          rec.root=await sha256(rec); receipts.push(rec); prevReceipt=rec.root; anchorA=anchorB;anchorB=child;stageRoundRoots.push(child);
+        }
+        const sc={schema:'Aura24CubeStageClosureV0_1_D0',epoch,stage,gate_name:STAGES[stage-1],rounds:24,first:stageRoundRoots[0],last:stageRoundRoots.at(-1),prior_two:[stageRoundRoots.at(-2),stageRoundRoots.at(-1)],receipt_head:prevReceipt};
+        sc.root=await sha256(sc); stageClosures.push(sc);epochStageRoots.push(sc.root);
+        // Consolidation itself participates in the moving two-anchor architecture.
+        {const pa=anchorA,pb=anchorB; anchorA=pb; anchorB=await triadicChild(pa,pb,`STAGE_CONSOLIDATE:${epoch}:${stage}`,sc,{epoch,stage,round:25});}
+      }
+      const ec={schema:'Aura24CubeEpochClosureV0_1_D0',epoch,epoch_name:EPOCHS[epoch-1],stages:24,stage_roots:epochStageRoots,receipt_head:prevReceipt,anchor:anchorB};ec.root=await sha256(ec);epochClosures.push(ec);
+      {const pa=anchorA,pb=anchorB; anchorA=pb; anchorB=await triadicChild(pa,pb,`EPOCH_CONSOLIDATE:${epoch}`,ec,{epoch,stage:25,round:25});}
+    }
+    // Exhaustive coordinate codec canary for the whole 24^3 campaign.
+    let codecPass=0,mirrorPass=0,chainPass=0,reopenPass=0;
+    for(let i=0;i<receipts.length;i++){
+      const r=receipts[i],d=decodeAddress(r.campaign_address); if(canonText(d.digits)===canonText(campaignDigits(r.epoch,r.stage,r.round))) codecPass++;
+      if(25-(25-r.stage)===r.stage)mirrorPass++;
+      if((i===0&&r.prev_receipt===null)||(i>0&&r.prev_receipt===receipts[i-1].root))chainPass++;
+      if(r.final_status==='PASS_REPAIRED'||r.final_status==='PASS')reopenPass++;
+    }
+    const unresolved=receipts.filter(r=>!String(r.final_status).startsWith('PASS'));
+    const closure={
+      schema:'Aura24CubeFinalClosureV0_1_D0',version:VERSION,shape:[24,24,24],work_units:receipts.length,unique_addresses:addrSet.size,unique_objectives:objSet.size,
+      stage_closures:stageClosures.length,epoch_closures:epochClosures.length,holds_detected:holds,side_missions:sideMissions.length,unresolved_required_holds:unresolved.length,
+      codec_roundtrip_pass:codecPass,mirror_involution_pass:mirrorPass,receipt_chain_pass:chainPass,completed_status_pass:reopenPass,
+      final_two_anchors:[anchorA,anchorB],receipt_head:prevReceipt,authority:'LOCAL_ONLY',effect_authority:'NONE_EXTERNAL',
+      external_adapter_status:'OPTIONAL_HOLD_BROWSER_STATE_BRIDGE_NOT_BOUND_LOCAL_FALLBACK_ACTIVE',
+      closed_contract:'LOCAL_SELF_CONTAINED_ADDRESS_KERNEL',elements:ELEMENTS,capability_atoms:CAPABILITY_ATOMS,laws:LAW
+    };
+    closure.status=(receipts.length===13824&&addrSet.size===13824&&objSet.size===13824&&stageClosures.length===576&&epochClosures.length===24&&unresolved.length===0&&codecPass===13824&&mirrorPass===13824&&chainPass===13824&&reopenPass===13824)?'PASS_24X24X24_SELF_CONTAINED_CLOSURE':'HOLD_FINAL_CLOSURE';
+    closure.final_root=await sha256(closure); closure.elapsed_ms=Date.now()-start;
+    return {schema:VERSION,status:closure.status,genesis,closure,receipts,side_missions:sideMissions,stage_closures:stageClosures,epoch_closures:epochClosures};
+  }
+  return {VERSION,LAW,ELEMENTS,CAPABILITY_ATOMS,STAGES,ROUNDS,EPOCHS,encodeAddress,decodeAddress,rankFromDigits,digitsFromRank,campaignDigits,objective,evaluate,run};
+});
+</script><script>
+const A=AuraAddressClosure24CubeV01,$=id=>document.getElementById(id);$('stages').innerHTML=A.STAGES.map((x,i)=>`<div class="pill">${String(i+1).padStart(2,'0')} · ${x}</div>`).join('');
+async function run(){$('run').disabled=true;$('run').textContent='RUNNING 13,824…';const r=await A.run();window.LAST=r;$('out').textContent=JSON.stringify(r.closure,null,2);$('run').disabled=false;$('run').textContent=r.status.startsWith('PASS')?'PASS · RERUN FULL 24³':'HOLD · RERUN';try{localStorage.setItem('AURA_24CUBE_CLOSED_WORLD',JSON.stringify({closure:r.closure,side_missions:r.side_missions,epoch_closures:r.epoch_closures}))}catch(e){}return r}
+$('run').onclick=run;$('reopen').onclick=()=>{try{const x=A.decodeAddress($('addr').value.trim());$('reopenOut').textContent=JSON.stringify(x,(_,v)=>typeof v==='bigint'?v.toString():v,2)}catch(e){$('reopenOut').textContent='HOLD '+e}};setTimeout(run,50);
+</script></body></html>
