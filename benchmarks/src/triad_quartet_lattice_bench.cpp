@@ -133,6 +133,18 @@ Schedule randomCandidate(std::mt19937_64& rng){Schedule s;perm12(s.rho,rng);perm
 Schedule staticGrid(){ Schedule s; std::iota(s.rho.begin(),s.rho.end(),0);std::iota(s.sigma.begin(),s.sigma.end(),0);s.kT.fill(0);s.kQ.fill(0);s.e=evaluate(s);return s; }
 Schedule cyclicTour(){ Schedule s; std::iota(s.rho.begin(),s.rho.end(),0);std::iota(s.sigma.begin(),s.sigma.end(),0);std::iota(s.kT.begin(),s.kT.end(),0);std::iota(s.kQ.begin(),s.kQ.end(),0);s.e=evaluate(s);return s; }
 
+Schedule balancedReference(){
+  // Historical balanced-fast candidate, now pinned so anyone can re-evaluate it
+  // independently instead of trusting the stored receipt.
+  Schedule s;
+  s.rho   = {1,8,4,11,2,5,3,7,6,9,10,0};
+  s.sigma = {6,8,9,10,11,0,5,4,2,7,1,3};
+  s.kT    = {8,1,10,7,4,3,6,2,5,0,9,11};
+  s.kQ    = {1,10,8,7,2,5,3,11,0,9,6,4};
+  s.e=evaluate(s);
+  return s;
+}
+
 struct WorldRun { int scales=0; int degradation_start=-1; double worst_balance=0; double first_balance=0; double last_balance=0; bool all_invariants=true; uint64_t structural_ops=0; };
 WorldRun runWorld100(const Schedule& s,int cap=100){
   WorldRun w; double prev=1e9; int degradeStreak=0;
@@ -168,7 +180,7 @@ int main(int argc,char**argv){
   uint64_t iters=argc>1?std::stoull(argv[1]):5000000ULL;
   uint64_t seed=argc>2?std::stoull(argv[2]):0xA9D34CULL;
   std::mt19937_64 rng(seed);
-  auto fixed=staticGrid(); auto cyclic=cyclicTour();
+  auto fixed=staticGrid(); auto cyclic=cyclicTour(); auto balanced=balancedReference();
   // Deterministic random baseline average over 5000 lawful no-repeat schedules.
   int rbN=5000; double rbPairs=0,rbPhase=0,rbMix=0,rbDiv=0,rbStd=0; int rbFull=0;
   for(int i=0;i<rbN;i++){auto x=randomCandidate(rng);rbPairs+=x.e.unique_pairs;rbMix+=x.e.transition_mix;rbDiv+=x.e.diversity;rbStd+=x.e.pair_std;if(x.e.full_pair_phase!=999){rbFull++;rbPhase+=x.e.full_pair_phase;}}
@@ -183,14 +195,15 @@ int main(int argc,char**argv){
     // no unsafe infinite search.
   }
   auto t1=Clock::now(); double sec=std::chrono::duration<double>(t1-t0).count();
-  auto world=runWorld100(best,100);
+  auto world=runWorld100(best,100); auto balancedWorld=runWorld100(balanced,100);
   std::cout<<std::fixed<<std::setprecision(9);
   std::cout<<"{\n\"schema\":\"AuraTriadQuartetLatticeBenchmarkV0_1_D0\",\n";
   std::cout<<"\"seed\":"<<seed<<",\"search_iterations\":"<<evals<<",\"search_seconds\":"<<sec<<",\"candidate_schedules_per_sec\":"<<(sec?evals/sec:0)<<",\n";
   std::cout<<"\"theoretical\":{\"pair_total\":66,\"pair_contacts_first4\":60,\"pair_contacts_first5\":72,\"earliest_possible_full_pair_coverage_phase\":5,\"operational_seats_per_agent_per_gate24_cycle\":24},\n";
   std::cout<<"\"fixed_static_grid\":";printEval(fixed.e);std::cout<<",\n\"cyclic_no_repeat_tour\":";printEval(cyclic.e);std::cout<<",\n";
+  std::cout<<"\"balanced_reference\":";printEval(balanced.e);std::cout<<",\n";
   std::cout<<"\"random_no_repeat_baseline\":{\"samples\":"<<rbN<<",\"avg_unique_pairs\":"<<rbPairs/rbN<<",\"full_coverage_fraction\":"<<double(rbFull)/rbN<<",\"avg_full_phase_when_reached\":"<<(rbFull?rbPhase/rbFull:-1)<<",\"avg_transition_mix\":"<<rbMix/rbN<<",\"avg_identity_diversity\":"<<rbDiv/rbN<<",\"avg_pair_stddev\":"<<rbStd/rbN<<"},\n";
   std::cout<<"\"best\":{\n"; printArr("rho",best.rho);std::cout<<',';printArr("sigma",best.sigma);std::cout<<',';printArr("kT",best.kT);std::cout<<',';printArr("kQ",best.kQ);std::cout<<",\"metrics\":";printEval(best.e);std::cout<<"},\n";
-  std::cout<<"\"world_scale_test\":{\"requested_cap\":100,\"completed_scales\":"<<world.scales<<",\"degradation_start\":"<<world.degradation_start<<",\"all_structural_invariants\":"<<(world.all_invariants?"true":"false")<<",\"pair_balance_cv_first\":"<<world.first_balance<<",\"pair_balance_cv_last\":"<<world.last_balance<<",\"pair_balance_cv_worst\":"<<world.worst_balance<<",\"structural_bookkeeping_ops\":"<<world.structural_ops<<"},\n";
+  std::cout<<"\"world_scale_test\":{\"requested_cap\":100,\"completed_scales\":"<<world.scales<<",\"degradation_start\":"<<world.degradation_start<<",\"all_structural_invariants\":"<<(world.all_invariants?"true":"false")<<",\"pair_balance_cv_first\":"<<world.first_balance<<",\"pair_balance_cv_last\":"<<world.last_balance<<",\"pair_balance_cv_worst\":"<<world.worst_balance<<",\"structural_bookkeeping_ops\":"<<world.structural_ops<<"},\n";  std::cout<<"\"balanced_reference_world_scale_test\":{\"requested_cap\":100,\"completed_scales\":"<<balancedWorld.scales<<",\"degradation_start\":"<<balancedWorld.degradation_start<<",\"all_structural_invariants\":"<<(balancedWorld.all_invariants?"true":"false")<<",\"pair_balance_cv_first\":"<<balancedWorld.first_balance<<",\"pair_balance_cv_last\":"<<balancedWorld.last_balance<<",\"pair_balance_cv_worst\":"<<balancedWorld.worst_balance<<",\"structural_bookkeeping_ops\":"<<balancedWorld.structural_ops<<"},\n";
   std::cout<<"\"laws\":[\"Triad=ExpansionPerspective\",\"Quartet=ContractionRebase\",\"OperationalSeat=(Mode,Cell)\",\"NoOperationalSeatRepeatWithin24PhaseCycle\",\"RebaseResetsLocalSeatFrameWhilePreservingGlobalLineage\",\"FullPairCoverage!=SemanticTruth\",\"SyntheticStructuralBenchmark!=ModelReasoningBenchmark\"]\n}\n";
 }
