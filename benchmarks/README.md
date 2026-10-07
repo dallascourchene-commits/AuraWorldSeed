@@ -7,6 +7,7 @@
 | Measurement | Baseline / control | Aura / treatment | Result | Boundary |
 |---|---:|---:|---:|---|
 | **Archangel clean dispatch** | 1740.9 ms median; 2,872.08 tasks/s; 36 heavy touches/task | 498.7 ms; 10,026.07 tasks/s; 9 heavy touches/task | **3.4909×**, **71.35% lower latency**, **75% fewer heavy touches**, **35,000/35,000 correct owners** | custom rendered-V5 dispatch workload |
+| **VMC-002 exact quotient × local consequence** | full baseline **753.612 ms** | exact quotient/local route **21.027 ms** | **35.840× faster**, exact outputs | structured exact-reuse fixture; high-entropy control is 0.9847× |
 | **Archangel mixed ambiguity** | 1821.0 ms median | 790.9 ms hybrid selective+fallback | **2.3024×**, **56.57% lower latency**, 100% clear accuracy | 20% deliberately ambiguous packets; fallback retained |
 | **Latest Gate24 receipt** | serial12 **32.5 ms** | parallel12 **8.1 ms** | **4.012×**, semantic-equivalent, **24/24 gates**, 0 HOLDs | browser-executable orchestration; not independent LLM minds |
 | **ARC-AGI-2 public task 9aaea919** | gold hidden before seal | two candidates sealed before gold | **Attempt 1 exact, 0 cell errors** | **one public task only; not an aggregate ARC score** |
@@ -18,6 +19,8 @@ The latest Gate24 receipt above is a **later, separate measurement** from the ea
 Aura V0.5 is currently **unranked overall on ARC-AGI-2** because only one sampled public evaluation task has been scored under the sealed protocol. On that task, the first sealed candidate was exact. The externally comparable milestone is therefore not another single-task anecdote; it is a frozen run over the full public evaluation and then untouched official evaluation.
 
 For current external context see the [ARC Prize leaderboard](https://arcprize.org/leaderboard).
+
+**Virtual Memory Crystal results:** [full VMC benchmark ledger](VIRTUAL_MEMORY_CRYSTAL.md) · [VMC-001 source](src/vmc_virtual_memory_crystal_v01.py) · [VMC-002 source](src/vmc002_rubik_proof_crystal.py) · [one-click VMC reproducer](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-vmc.yml)
 
 This page consolidates the benchmark work that was spread across Arena receipts, research notes, C++ programs, browser witnesses, and acceptance packets. It intentionally preserves failures, HOLDs, repairs, and claim ceilings instead of reporting only favorable results.
 
@@ -116,11 +119,44 @@ The HDC program has both a deliberately strict literal-orthogonality policy and 
 | North-Star physical convergence | 50/50 reciprocal physical closures in 51 cycles; 1 HOLD + 12 repairs | B |
 | Four-parent 51×4 lift | 204 parent cycles; first child HOLD; repaired child 24/24 Gate24 PASS | B |
 | Archangel neural before/after | median 3.4909× clean dispatch speedup; 75% heavy-touch reduction | B |
+| Virtual Memory Crystal VMC-001/002 | **35.840×** exact quotient/local-consequence speedup on structured fixture; **13.92%** E8 MSE reduction vs Z8; high-entropy control **0.9847×** | A/C |
 | H01 selective brain reification | 150M procedural synapse addresses; 0.21228% touched in consequence-local fixture | C |
 | Virtual photonic lineage memory | 21,570-byte exact child patch; 2,531.9× smaller incremental storage than duplicating the 54.6 MB parent | C |
 | ARIEL recursive-journey fuzz | 51 journeys; 417 receipts; 23 unique stations visited | B/C |
 
 ---
+
+## Virtual Memory Crystal (VMC) — recovered Sept. 17–18 benchmark family
+
+These results were omitted from the first Oct. 6–7 harvest only because that harvest was time-windowed. The original Python sources are now public and a dedicated reproducer is available.
+
+Headline matched result:
+
+```text
+VMC-002 full baseline:               753.611695 ms
+VMC-002 quotient + local consequence: 21.026922 ms
+measured speedup:                     35.8403239×
+exact outputs:                        true
+
+high-entropy baseline:                275.871995 ms
+high-entropy cached/quotient:         280.152612 ms
+high-entropy speedup:                 0.984720×
+exact outputs:                        true
+```
+
+VMC-001 additionally measured E8 vs Z8 at equal lattice scale over 120,000 samples:
+
+- Z8 MSE/dim: **0.08332172**
+- E8 MSE/dim: **0.07172657**
+- E8 MSE reduction: **13.92%**
+- at σ=0.18, decode error **4.3158% → 0.7875%** (**81.75% relative reduction**)
+- exact archive reopen: **32/32**
+- one-byte corruption detection: **PASS**
+- WORM overwrite rejection: **PASS**
+
+The strong 35.84× result is explicitly regime-bound: when the benchmark removes exact reuse by making the work high-entropy/unique, the optimization becomes slightly slower. That negative control is part of the evidence.
+
+See **[VIRTUAL_MEMORY_CRYSTAL.md](VIRTUAL_MEMORY_CRYSTAL.md)** for the full results, sources, selective-retrieval measurements, integrity tests, and claim boundaries.
 
 ## 1. Exact 24³ address / lineage closure
 
