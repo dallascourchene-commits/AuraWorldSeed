@@ -1,3 +1,5 @@
+> **Size clarification:** tiny `.html` launchers point to separate `.cartridge.gz.b64` payloads; launcher bytes are not total executable size. All original examples are preserved. [11D public world gateway](../11d/index.html).
+
 # Aura Public Creator Cartridges
 
 **Built with Aura in under half an hour of total work time. $0 external API spend. No provider API calls in the default shipped demos. Lightweight, independently updateable cartridges.**

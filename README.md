@@ -1,3 +1,13 @@
+> ## NEW — Public 11D Gateway / Book Five → Book Six (19 October 2026)
+>
+> **[Enter the public 11D world-builder](11d/index.html)** · **[What's integrated](docs/11D_BOOK_FIVE_BOOK_SIX.md)** · **[October evidence with reproducible source](benchmarks/october-2026/README.md)** · [Preserved full Arena](index.html) · [Games and apps](cartridges/)
+>
+> The 11D gateway is a **functional local browser candidate**, not a completed 10D-to-11D consolidation or autonomous Book Six. It can create a procedural 3D-projected place, witness changes, undo them, and export a world seed. The existing large Arena, app examples, and prior benchmarks are preserved.
+>
+> **Benchmarks with boundaries:** Structured VMC **35.840×** in its specified fixture; D11 multi-engine ARC **33/500 vs 31/500 public-training tasks** but **~348.2 s vs ~0.95 s** (*no net speed win*); D9 SDC software model **256/256** exact four-bit checks (*not DNA wet-lab replication*). Results are not universal performance or official ARC scores.
+>
+> The ~600-byte-seed to ~135 MB-video claim remains **unverified for public reproduction** pending source/seed, byte counts, playback comparison, and an independent receipt. Tiny launcher HTML files under `cartridges/` are wrappers, not the entire encoded payload. No new private Google Drive links or credentials are added.
+>
 > ## Live Arena & Creator Cartridges
 > **Built with Aura in under half an hour total work time · $0 external API spend · lightweight static cartridges.**
 >

@@ -1,0 +1,19 @@
+name: Reproduce October 2026 software canaries
+on:
+  push:
+    paths:
+      - 'benchmarks/october-2026/**'
+      - '.github/workflows/reproduce-october-2026.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  october-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exact domain-level 4-bit SDC model tests (not physical chemistry)
+        run: python3 benchmarks/october-2026/validate_exhaustive_n4.py
+      - name: ARC DSL import and bounded synthetic-input canary (not a competition score)
+        run: node -e "const s=require('./benchmarks/october-2026/aura_arc_solver_d10.js'); const r=s.search({train:[{input:[[1,2]],output:[[1,2]]}],test:[{input:[[3,4]]}]}); if(r.status!=='TRAIN_FIT_CANDIDATE'||JSON.stringify(r.predictions)!=='[[[3,4]]]')process.exit(2); console.log('D10 synthetic canary PASS',r.chosen);"

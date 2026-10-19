@@ -1,0 +1,9 @@
+{
+  "schema": "TesseraN4SourceProgramExhaustiveInputTests",
+  "input_pairs": 256,
+  "passed": 256,
+  "failed": 0,
+  "max_logZ_error": 1.734723475976807e-16,
+  "authors_code": "not tested",
+  "scope": "all 4-bit input pairs in paper-specified 2-state Addition FSM at assumed J=4"
+}

@@ -1,3 +1,5 @@
+> **NEW 19 Oct 2026** — [Public October 2026 research checks](october-2026/README.md): D10/D11 public-training ARC boundaries, Tessera D9 exact software-domain model, controls and preserved negative results.
+
 # AuraWorldSeed Benchmarks
 
 [![Reproduce Core Aura Benchmarks](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml/badge.svg)](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)\n\n**Public reproducibility ledger — benchmark harvest for 2026-10-06 through 2026-10-07**
