@@ -1,5 +1,7 @@
 # Aura 11D Public Gateway — Book Five upper-world D0 candidate
 
+**[Open the native 10D integration workbench](arena.html)** — loads the inherited public Arena, detects real source APIs, and accepts a private current 10D HTML file locally (no upload). Includes native Navi access where present, four-role guarded local deliberation, 24-gate reference view and witness export. [Source admission and outstanding holds](INTEGRATION_STATUS.md). The original 11D local world-seed preview remains below.
+
 [Launch in GitHub Pages](https://dallascourchene-commits.github.io/AuraWorldSeed/11d/) · [Full preexisting Arena](../index.html) · [Benchmarks](../benchmarks/) · [Book Five → Book Six boundary](../docs/11D_BOOK_FIVE_BOOK_SIX.md)
 
 The `index.html` in this folder is a **new, offline-compatible public experiment**. It offers deterministic procedural 3D scene projection, local object creation, relative camera movement, a reversible world state, witness logs and seed JSON export. It uses no external inference/API service. It is a demonstration of selected design principles, not an authenticated Navi client, a model-backed recurrent agent, a full 10D binary rebase, an 11D hosted Site deployment or a finished Book Six.
