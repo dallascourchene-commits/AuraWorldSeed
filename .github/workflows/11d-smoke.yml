@@ -1,0 +1,22 @@
+name: 11D Federated Upper World Smoke
+on:
+  push:
+    paths:
+      - '11d/**'
+      - '.github/workflows/11d-smoke.yml'
+  pull_request:
+    paths:
+      - '11d/**'
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save @playwright/test
+      - run: npx playwright install --with-deps chromium
+      - run: node --check 11d/upper-world.js
+      - run: npx playwright test 11d/upper-world.spec.cjs --project=chromium
