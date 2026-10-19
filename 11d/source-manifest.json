@@ -1,0 +1,20 @@
+{
+  "schema": "Aura11DPublicIntegrationCandidateV1",
+  "date": "2026-10-19",
+  "origin": "Aura Drive 2 / 10D Gem Arena",
+  "source_file": "AURA_10D_D13_PLUS_D12_ARC_RESEARCH_LAB_20261018.html",
+  "source_sha256": "310ed61be54d2c9fd0b1552055e37ae2432792f47cfb725ef3f088f375615e92",
+  "role": "Parallax D13+D12 noncanonical native donor; other branches not flattened",
+  "currentness": "Owner explicitly reports no globally verified latest 10D",
+  "publication_policy": "Owner-selected 10D bytes stay local; public repo does not contain private Navi document index",
+  "claims": {
+    "navi_source_index": 529,
+    "local_workcell_review": true,
+    "webgl_cohosted_integration": false,
+    "ameliabridge_authenticated": false,
+    "jspace_cas_authenticated": false,
+    "all_10d_branches_merged": false
+  },
+  "checks": "Local in-memory Chromium carrier; pending GitHub Pages independent reproof",
+  "release": "REVIEW_ONLY_NO_CANONICAL_PROMOTION"
+}

@@ -1,0 +1,286 @@
+{
+  "schema": "Aura11D10DSourceInventoryD0",
+  "captured": "2026-10-19",
+  "scope": "Top-level files in Aura Drive 2 / 10D Gem Arena. Subfolders, historical descendants, conflicting owners and ZIP members are not exhaustively inventoried.",
+  "privacy": "Names/sizes only: no private Drive IDs, links, payloads, secrets or privileges are published.",
+  "status": "SOURCE_DISCOVERY_ONLY",
+  "file_count": 46,
+  "files": [
+    {
+      "name": "AURA_10D_D12_PARALLAX_ARC_CONVERGENCE_20261018.zip",
+      "bytes": 3186347,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D13_PLUS_D12_ARC_RESEARCH_LAB_20261018.html",
+      "bytes": 1379424,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D33_BASELINE_VS_AURA_BENCHMARK_20261017.zip",
+      "bytes": 1918316,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D32_PIER_PAIRED_PILOT_20261017.zip",
+      "bytes": 950165,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D31_PIER_AURA_CODING_ADAPTER_20261017.zip",
+      "bytes": 938140,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D30_DEEPSWE_V11_READINESS_EVIDENCE_20261017.zip",
+      "bytes": 631903,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D29_CLEARVIEW_GAME_CAPABILITY_ARENA_20261017.zip",
+      "bytes": 1195353,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D29_MMR_WINSTONIAN_LIVING_AURADOC_CONSOLIDATION_20261016.zip",
+      "bytes": 2501,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D28_WILLOW_THREE_FIGURE_SOURCE_REPLAY_20261016.zip",
+      "bytes": 23494241,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D27_WILLOW_DRIVE_DATASETS_ACCESS_BRIDGE_20261016.zip",
+      "bytes": 6997,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D26_OFFICIAL_DATASET_ACCESSION_20261016.zip",
+      "bytes": 24397577,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D25_SOURCE_FIDELITY_REBASE_20261016.zip",
+      "bytes": 37346993,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D24_BIOHYBRID_PLA_EUV_METAUI_20261016.zip",
+      "bytes": 37121618,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D23_MAXWELL_MAGIC_OPTOGENETICS_METASYSTEM_20261016.zip",
+      "bytes": 36604272,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D22_VIRTUAL_MATERIAL_GENESIS_20261016.zip",
+      "bytes": 36127754,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D21_CADUCEUS_RECIPROCAL_CONE_WITNESS_ZERO_20261016.zip",
+      "bytes": 35605486,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D20_CONTINUOUS_THREE_LENS_WITNESS_FLOW_20261016.zip",
+      "bytes": 15415830,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D19_THREE_TEMPORAL_WITNESSES_HYPOTHESIS_20261016.zip",
+      "bytes": 29652,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D18_DUAL_WITNESS_THRONE_REENTRY_20261016.zip",
+      "bytes": 14657870,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D17_25BEAM_NESTED_SPECTRAL_GENESIS_20261016.zip",
+      "bytes": 13067180,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D16_PERFECT_VIRTUAL_ORB_SPECTRAL_FRONTIER_20261016.zip",
+      "bytes": 4517152,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D16_PERFECT_VIRTUAL_ORB_CANDIDATE_20261016.html",
+      "bytes": 11335832,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D15_RECURSIVE_ARC_CONVERGENCE_20261016.zip",
+      "bytes": 8358086,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D15_RECURSIVE_ARC_CONVERGED_ARENA_20261016.html",
+      "bytes": 11312140,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D14R1_SPATIAL_GENESIS_INTEGRATED_20261016.zip",
+      "bytes": 72621086,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D13R2_SPATIAL_FIRST_EMBODIED_ATLAS_20261015.zip",
+      "bytes": 50369347,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D13R1_SITUATED_RECURSIVE_HOLODECK_WALL_PULSE_20261015.zip",
+      "bytes": 46029679,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_SEPT20_22_ORIGINAL_RECURSIVE_WORKCELL_FORENSIC_TIMELINE_20261015.zip",
+      "bytes": 8531,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_ORIGINAL_RECURSIVE_OBSERVER_LINEAGE_REBASE_D0_20261015.zip",
+      "bytes": 2870474,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D12R3_10D_THREE_WAY_RECIPROCAL_DELIBERATION_20261015.zip",
+      "bytes": 39229946,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D12R2_10D_DOUBLE_ENTRY_MODEL_CONTEXT_GATEWAY_20261015.zip",
+      "bytes": 38841859,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_D12R1_10D_RECURSIVE_WORKCELL_FAMILY_20261015.zip",
+      "bytes": 35019310,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D12_PROGRAMMABLE_TESSERA_VIRTUAL_COMPUTER_20261015.zip",
+      "bytes": 30769456,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D12_PROGRAMMABLE_VIRTUAL_COMPUTER_20261015.html",
+      "bytes": 11184592,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D11_FOUR_ENGINE_ARC_CONVERGENCE_20261015.zip",
+      "bytes": 4452905,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D11_ARC_CONVERGED_ARENA_20261015.html",
+      "bytes": 11164784,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D9_SDC_EXACT_REPRO_AND_BENCHMARK_D1_20261015.zip",
+      "bytes": 17903372,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_10D_D9_SCAFFOLDED_DNA_MATERIAL_GENESIS_D0_20261015.zip",
+      "bytes": 9352290,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D10_ARC_AUTOLOOM_FRONTIER_20261015.zip",
+      "bytes": 4398835,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D10_SOURCE_BOUND_ARC_AUTOLOOM_ARENA_20261015.html",
+      "bytes": 11160083,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D9_HARGON_AUTOLOOM_INTEGRATED_20261015.zip",
+      "bytes": 4369599,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D9_HARGON_AUTOLOOM_INTEGRATED_20261015.html",
+      "bytes": 11143895,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D8_RESEARCH_ATOMIZER_INTEGRATED_20261015.html",
+      "bytes": 11036434,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "AURA_10D_D7_ONE_NATIVE_ARENA_20261015.zip",
+      "bytes": 4407220,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "00_CURRENT_10D_D7_UNIFIED_NATIVE_ARENA.html",
+      "bytes": 11019229,
+      "type": "text/html",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    },
+    {
+      "name": "TESSERA_FOUR_OBJECTIVE_EXPEDITION_D0_20261014.zip",
+      "bytes": 9317075,
+      "type": "application/zip",
+      "stage": "INDEX_ONLY_NOT_MERGED"
+    }
+  ]
+}
