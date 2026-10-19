@@ -2,6 +2,32 @@
 
 [![Reproduce Core Aura Benchmarks](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml/badge.svg)](https://github.com/dallascourchene-commits/AuraWorldSeed/actions/workflows/reproduce-benchmarks.yml)\n\n**Public reproducibility ledger — benchmark harvest for 2026-10-06 through 2026-10-07**
 
+## New provider savings audit — 19 October 2026
+
+**[Full audited provider-usage report: September 20–October 19 export and August comparison](PROVIDER_USAGE_2026-10-19.md)**
+
+| Provider metric | August export (8 active days) | Recent 30-day export (4 recorded days, all in September) |
+| --- | ---: | ---: |
+| Requests | 16,233 | 364 |
+| Input tokens served from cache | 2,166,235,904 | 187,851,392 |
+| Input cache-hit share | **97.8650%** | **98.4115%** |
+| Actual billed USD | **$41.08** | **$1.59** |
+| Illustrative no-input-cache USD | $527.75 | $34.50 |
+| Illustrative price difference | 92.22% | **95.38%** |
+
+The cache-hit share increased **0.546 percentage points** between these **non-matched exports**. The recent export has records on September 20, 21, 22, and 24 only; it **does not establish an October usage trend**. Provider-model generations, activity levels, and tariffs differ. No causal Aura-only savings percentage is asserted.
+
+### Why Aura's architecture can avoid paid inference
+
+- **No API call for deterministic work:** exact algebra, FST/WFST routing, K27 transforms, source verification, procedural rendering, local cache hits, and consequence receipts can run locally when a suitable carrier is bound.
+- **Surgical slices when a model is necessary:** pass task-relevant source/code cones with exact source/version paths, not an entire repository by default. This is the designed selective-hydration workflow, **not** a per-request behavior established by the provider CSV exports.
+- **Reuse and caching:** consistent prefixes/source reuse may let a provider serve input from cache. The **provider** records hit/miss volumes and bills; proof of each optimization's causal contribution requires controlled, identical-workload trials.
+
+The price-only no-cache figures keep recorded input-token quantities and output charges fixed while replacing discounted cache-hit pricing with corresponding miss-input tariffs. They are **not** tokens, wall-clock time, energy, or avoided-model-call savings. Raw provider exports contain key/account fields and are **not committed**.
+
+Read the [founder's Origin Story](../docs/ORIGIN_STORY.md) to understand the community language-preservation and source-sovereignty requirements driving this architecture.
+
+
 ## Headline measured standing
 
 | Measurement | Baseline / control | Aura / treatment | Result | Boundary |
