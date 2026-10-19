@@ -33,14 +33,14 @@ These are four **observed days**, not four consecutive daily checkpoints and not
 
 | Date | Requests | Input cache-hit share | Billed (USD) |
 | --- | ---: | ---: | ---: |
-| 2026-08-21 | 2,253 | 30.526% | $0.182939 |
+| 2026-08-21 | 2,253 | 30.526% | $0.182938 |
 | 2026-08-22 | 8 | 0.000% | $0.126703 |
 | 2026-08-23 | 56 | 19.085% | $0.588084 |
-| 2026-08-26 | 2,844 | 97.807% | $6.626425 |
-| 2026-08-27 | 4,635 | 97.858% | $11.679437 |
-| 2026-08-28 | 1,224 | 98.374% | $3.331409 |
-| 2026-08-29 | 981 | 95.384% | $6.729303 |
-| 2026-08-30 | 4,232 | 98.644% | $11.811686 |
+| 2026-08-26 | 2,844 | 97.807% | $6.626391 |
+| 2026-08-27 | 4,635 | 97.858% | $11.679444 |
+| 2026-08-28 | 1,224 | 98.374% | $3.331442 |
+| 2026-08-29 | 981 | 95.384% | $6.729254 |
+| 2026-08-30 | 4,232 | 98.644% | $11.811728 |
 
 The shift from low-cache early August days to high-cache late August days is visible in these records. It is an observed pattern, not a controlled explanation of its causes.
 
