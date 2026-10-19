@@ -5,6 +5,29 @@
 
 # AuraWorldSeed
 
+> **[Origin Story — why AuraOS began with Anishinaabemowin preservation and Indigenous data sovereignty](docs/ORIGIN_STORY.md)**. This founding purpose shapes the project's deterministic execution, selective hydration, accountable source lineage, and accessible computing design.
+
+## NEW — Provider-cache and API-cost evidence (October 19, 2026)
+
+[**Read the complete usage and savings audit**](benchmarks/PROVIDER_USAGE_2026-10-19.md) · [Benchmark ledger](benchmarks/README.md) · [Origin Story](docs/ORIGIN_STORY.md)
+
+| Observed provider metric | August export (8 recorded days) | Sept 20–Oct 19 export (4 recorded days) |
+| --- | ---: | ---: |
+| Recorded API requests | 16,233 | 364 |
+| Cache-hit input tokens | 2,166,235,904 | 187,851,392 |
+| **Input-token cache-hit share** | **97.8650%** | **98.4115%** |
+| **Actual billed cost** | **$41.08** | **$1.59** |
+| Illustrative no-input-cache bill | $527.75 | $34.50 |
+| Illustrative **price-only** difference | 92.22% | **95.38%** |
+
+The newer records show a **+0.546 percentage-point** input-cache-hit share versus the older export, but this is **not a matched A/B**: models, prices, traffic and dates differ. The recent export has usage **only on September 20, 21, 22 and 24**, with no October rows; a continuous last-30-days improvement trend cannot be claimed.
+
+**How Aura reduces potential API dependence:** Many operations (exact mathematics, HyperDrive, FST/WFST routing, K27 transformations, locally verifiable receipts, guards, and procedural generation) can run **deterministically without an LLM call**. When model inference *is* required, Aura is designed to hydrate **surgical, provenance-linked code/source slices and their consequences**, not an entire repository by default. Stable input reuse can support provider-side caching.
+
+**Measurement boundary:** These provider exports quantify caching and billed dollars. They do not identify which code slices were sent, count API calls avoided by local execution, or establish Aura as the sole cause of cache hits. The hypothetical no-cache amounts hold recorded tokens and output charges constant and substitute listed cache-miss tariffs; **95.38% is a billing-price scenario, not 95% fewer tokens, computations, or energy**. No account IDs or masked API keys have been published.
+
+The previously reported October 7 systems benchmarks follow unchanged below.
+
 ## CURRENT MEASURED STANDING — 2026-10-07
 
 > **Short version:** Aura currently has **strong same-workload systems A/B results**, including a **3.4909× clean Archangel dispatch speedup** and **2.3024× speedup under mixed ambiguity with fallback**. The latest Gate24 receipt shows **4.012× lower-latency parallel execution than serial with the same semantic root**. On ARC-AGI-2, Aura solved **1/1 sampled public evaluation task exactly on attempt 1 after sealing its hypothesis before gold**, but **Aura does not yet have an aggregate ARC-AGI-2 score and is therefore not leaderboard-rankable overall**.
