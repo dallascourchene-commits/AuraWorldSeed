@@ -1,0 +1,27 @@
+name: 11D source-governed cartridge intake
+on:
+  push:
+    branches: [feature/11d-native-10d-private-safe-20261019]
+    paths:
+      - "11d/**"
+      - ".github/workflows/11d-cold-intake.yml"
+  pull_request:
+    paths:
+      - "11d/**"
+      - ".github/workflows/11d-cold-intake.yml"
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node --check 11d/cold-cartridge-loader.js && node --check 11d/test-cold-intake.mjs
+      - run: npm install --no-save playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node 11d/test-cold-intake.mjs
